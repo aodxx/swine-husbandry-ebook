@@ -30,7 +30,7 @@ test('mobile reader core journey works', async ({ page }) => {
   const citation = page.locator('.citation-ref').first()
   await expect(citation).toBeVisible()
   await citation.click()
-  await expect(page.getByRole('dialog')).toBeVisible()
+  await expect(page.getByRole('dialog', { name: /แหล่งอ้างอิง/ })).toBeVisible()
   await expect(page.getByText(/Citation \[\d+\]/)).toBeVisible()
 })
 
@@ -48,6 +48,49 @@ test('reader settings and bookmark survive reload', async ({ page }) => {
   await expect(page.locator('.bookmark-strip')).toContainText('1.1')
 })
 
+test('glossary terms open an accessible definition dialog', async ({ page }) => {
+  await page.goto('./')
+  await page.getByRole('button', { name: 'เปิดตำรา' }).click()
+
+  let opened = false
+  for (let index = 0; index < 8; index += 1) {
+    const terms = page.locator('.glossary-term')
+    if (await terms.count()) {
+      await terms.first().click()
+      await expect(page.getByRole('dialog', { name: /อภิธานศัพท์/ })).toBeVisible()
+      opened = true
+      break
+    }
+    const next = page.getByRole('button', { name: 'ถัดไป →' })
+    if (await next.isDisabled()) break
+    await next.click()
+  }
+  expect(opened).toBeTruthy()
+})
+
+test('book mode paginates and honors reduced motion', async ({ page }) => {
+  await page.emulateMedia({ reducedMotion: 'reduce' })
+  await page.goto('./')
+  await page.getByRole('button', { name: 'เปิดตำรา' }).click()
+  await page.getByRole('button', { name: 'การตั้งค่าการอ่าน' }).click()
+  await page.getByRole('button', { name: 'Book Mode' }).click()
+  await page.getByRole('button', { name: 'ปิด', exact: true }).click()
+
+  const pageNumber = page.locator('.book-page-number')
+  await expect(pageNumber).toContainText('/')
+  const before = await pageNumber.textContent()
+  await expect(page.getByRole('button', { name: 'หน้าถัดไป' })).toBeEnabled()
+  await page.getByRole('button', { name: 'หน้าถัดไป' }).click()
+  await expect.poll(() => pageNumber.textContent()).not.toBe(before)
+
+  const transitionSeconds = await page.locator('.book-paper').evaluate(element => {
+    const duration = getComputedStyle(element).transitionDuration.split(',')[0]?.trim() ?? '0s'
+    if (duration.endsWith('ms')) return Number.parseFloat(duration) / 1000
+    return Number.parseFloat(duration)
+  })
+  expect(transitionSeconds).toBeLessThan(0.02)
+})
+
 test('service worker registers on localhost preview', async ({ page }) => {
   await page.goto('./')
   const supported = await page.evaluate(() => 'serviceWorker' in navigator)
@@ -57,4 +100,17 @@ test('service worker registers on localhost preview', async ({ page }) => {
     const registration = await navigator.serviceWorker.getRegistration()
     return Boolean(registration)
   }, undefined, { timeout: 15000 })
+})
+
+test('reader reloads offline after first online visit', async ({ page, context }) => {
+  await page.goto('./')
+  await expect(page.getByRole('heading', { name: /นิพนธ์ฟาร์ม/ })).toBeVisible()
+  await page.evaluate(async () => {
+    if ('serviceWorker' in navigator) await navigator.serviceWorker.ready
+  })
+
+  await context.setOffline(true)
+  await page.reload({ waitUntil: 'domcontentloaded' })
+  await expect(page.getByRole('heading', { name: /นิพนธ์ฟาร์ม/ })).toBeVisible()
+  await context.setOffline(false)
 })
