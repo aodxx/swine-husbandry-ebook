@@ -4,19 +4,19 @@ Generated from `data/research-status.json` on 2026-08-23. Do not edit counts man
 
 ## Current Project State
 
-Chapter 1 status: `OWNER_REVIEW_PASSED`. Current Focus is `2.11` — การเลือกพ่อพันธุ์. Next Topic is `2.12` — การเลือกแม่พันธุ์; `CHAPTER_2_CONTENT_PRODUCTION`.
+Chapter 1 status: `OWNER_REVIEW_PASSED`. Current Focus is `2.12` — การเลือกแม่พันธุ์. Next Topic is `2.13` — ลักษณะที่ไม่ควรเก็บเป็นพันธุ์; `CHAPTER_2_CONTENT_PRODUCTION`.
 
 ## Current State Count
 
 | Status | Count |
 |---|---:|
-| TODO | 316 |
+| TODO | 315 |
 | RESEARCHING | 0 |
 | SOURCES_COLLECTED | 0 |
 | FACTS_EXTRACTED | 0 |
 | DRAFTED | 0 |
 | FACT_CHECKED | 0 |
-| EDITORIAL_REVIEW | 22 |
+| EDITORIAL_REVIEW | 23 |
 | APPROVED | 0 |
 | PUBLISHED | 0 |
 | BLOCKED | 0 |
@@ -28,16 +28,16 @@ Chapter 1 status: `OWNER_REVIEW_PASSED`. Current Focus is `2.11` — การ�
 
 | Milestone reached | Count |
 |---|---:|
-| Drafted or beyond | 22 |
-| Fact checked or beyond | 22 |
-| Editorial review or beyond | 22 |
+| Drafted or beyond | 23 |
+| Fact checked or beyond | 23 |
+| Editorial review or beyond | 23 |
 | Approved | 0 |
 | Published | 0 |
 
 ## Current Focus
 
-- **Current Topic:** `2.11` — การเลือกพ่อพันธุ์
-- **Next Topic:** `2.12` — การเลือกแม่พันธุ์
+- **Current Topic:** `2.12` — การเลือกแม่พันธุ์
+- **Next Topic:** `2.13` — ลักษณะที่ไม่ควรเก็บเป็นพันธุ์
 - **Next Topic Gate:** `CHAPTER_2_CONTENT_PRODUCTION`
 - **Research status:** `EDITORIAL_REVIEW`
 - **Last reviewed:** 2026-08-23
