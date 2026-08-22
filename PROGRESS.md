@@ -4,19 +4,19 @@ Generated from `data/research-status.json` on 2026-08-23. Do not edit counts man
 
 ## Current Project State
 
-Chapter 1 status: `OWNER_REVIEW_PASSED`. Current Focus is `2.6` — พันธุ์และสายพันธุ์อื่นที่เกี่ยวข้อง. Next Topic is `2.7` — จุดเด่น–จุดด้อยของแต่ละพันธุ์; `CHAPTER_2_CONTENT_PRODUCTION`.
+Chapter 1 status: `OWNER_REVIEW_PASSED`. Current Focus is `2.7` — จุดเด่น–จุดด้อยของแต่ละพันธุ์. Next Topic is `2.8` — สายแม่และสายพ่อ; `CHAPTER_2_CONTENT_PRODUCTION`.
 
 ## Current State Count
 
 | Status | Count |
 |---|---:|
-| TODO | 321 |
+| TODO | 320 |
 | RESEARCHING | 0 |
 | SOURCES_COLLECTED | 0 |
 | FACTS_EXTRACTED | 0 |
 | DRAFTED | 0 |
 | FACT_CHECKED | 0 |
-| EDITORIAL_REVIEW | 17 |
+| EDITORIAL_REVIEW | 18 |
 | APPROVED | 0 |
 | PUBLISHED | 0 |
 | BLOCKED | 0 |
@@ -28,16 +28,16 @@ Chapter 1 status: `OWNER_REVIEW_PASSED`. Current Focus is `2.6` — พันธ
 
 | Milestone reached | Count |
 |---|---:|
-| Drafted or beyond | 17 |
-| Fact checked or beyond | 17 |
-| Editorial review or beyond | 17 |
+| Drafted or beyond | 18 |
+| Fact checked or beyond | 18 |
+| Editorial review or beyond | 18 |
 | Approved | 0 |
 | Published | 0 |
 
 ## Current Focus
 
-- **Current Topic:** `2.6` — พันธุ์และสายพันธุ์อื่นที่เกี่ยวข้อง
-- **Next Topic:** `2.7` — จุดเด่น–จุดด้อยของแต่ละพันธุ์
+- **Current Topic:** `2.7` — จุดเด่น–จุดด้อยของแต่ละพันธุ์
+- **Next Topic:** `2.8` — สายแม่และสายพ่อ
 - **Next Topic Gate:** `CHAPTER_2_CONTENT_PRODUCTION`
 - **Research status:** `EDITORIAL_REVIEW`
 - **Last reviewed:** 2026-08-23
