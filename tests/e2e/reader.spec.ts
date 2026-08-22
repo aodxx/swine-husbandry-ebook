@@ -24,7 +24,7 @@ test('mobile reader core journey works', async ({ page }) => {
   await page.getByRole('button', { name: 'ซีเปีย' }).click()
   await expect(page.locator('html')).toHaveAttribute('data-theme', 'sepia')
   await page.getByRole('button', { name: 'Book Mode' }).click()
-  await page.getByRole('button', { name: 'ปิด' }).click()
+  await page.getByRole('button', { name: 'ปิด', exact: true }).click()
   await expect(page.locator('.book-mode')).toBeVisible()
 
   const citation = page.locator('.citation-ref').first()
@@ -40,7 +40,7 @@ test('reader settings and bookmark survive reload', async ({ page }) => {
   await page.getByRole('button', { name: 'เพิ่มบุ๊กมาร์ก' }).click()
   await page.getByRole('button', { name: 'การตั้งค่าการอ่าน' }).click()
   await page.getByRole('button', { name: 'กลางคืน' }).click()
-  await page.getByRole('button', { name: 'ปิด' }).click()
+  await page.getByRole('button', { name: 'ปิด', exact: true }).click()
 
   await page.reload()
   await expect(page.locator('html')).toHaveAttribute('data-theme', 'dark')
