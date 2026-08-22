@@ -2,8 +2,8 @@
   "schema_version": "1.0",
   "project": "swine-husbandry-ebook",
   "last_updated": "2026-08-23",
-  "current_focus": "3.7",
-  "next_topic": "3.7",
+  "current_focus": "3.8",
+  "next_topic": "3.8",
   "allowed_statuses": [
     "TODO",
     "RESEARCHING",
@@ -642,19 +642,22 @@
     {
       "id": "3.7",
       "title": "Wean-to-finish",
-      "status": "TODO",
-      "research_started": null,
-      "research_completed": null,
-      "draft_completed": null,
-      "fact_checked": null,
+      "status": "EDITORIAL_REVIEW",
+      "research_started": "2026-08-23",
+      "research_completed": "2026-08-23",
+      "draft_completed": "2026-08-23",
+      "fact_checked": "2026-08-23",
       "approved": null,
-      "last_reviewed": null,
-      "reviewed_by": null,
-      "source_count": 0,
-      "risk_level": "normal",
+      "last_reviewed": "2026-08-23",
+      "reviewed_by": "Manus AI",
+      "source_count": 5,
+      "risk_level": "high",
       "farm_context": false,
-      "remaining_questions": [],
-      "notes": "Foundation initialized; research not started."
+      "remaining_questions": [
+        "ต้องประเมินแหล่งสุกรเข้าและ health plan ของฟาร์มจริงร่วมกับสัตวแพทย์"
+      ],
+      "notes": "Foundation initialized; research not started.",
+      "subtopic_quality_gate": "PASS"
     },
     {
       "id": "3.8",
@@ -5909,8 +5912,8 @@
   },
   "chapter_3_production": {
     "status": "IN_PROGRESS",
-    "current_topic": "3.7",
-    "next_topic": "3.7",
+    "current_topic": "3.8",
+    "next_topic": "3.8",
     "one_subtopic_at_a_time": true,
     "golden_chapter_reference": "1",
     "golden_chapter_2_reference": "2",
