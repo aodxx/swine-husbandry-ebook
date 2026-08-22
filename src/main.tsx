@@ -5,7 +5,7 @@ import tocData from '../data/toc.json'
 import { loadBookmarks, loadPrefs, loadProgress, saveBookmarks, savePrefs, saveProgress, type ReaderPrefs, type Theme } from './lib/storage'
 import './styles.css'
 
-type Topic = { id: string; title: string; chapter: number; html: string }
+type Topic = { id: string; title: string; chapter: number; html: string; searchText: string }
 type View = 'cover' | 'toc' | 'read'
 
 const rawFiles = import.meta.glob('../content/part-01/chapter-*/*.md', {
@@ -13,6 +13,16 @@ const rawFiles = import.meta.glob('../content/part-01/chapter-*/*.md', {
   import: 'default',
   eager: true,
 }) as Record<string, string>
+
+function stripMarkdown(value: string) {
+  return value
+    .replace(/^---[\s\S]*?---/m, ' ')
+    .replace(/!\[[^\]]*\]\([^)]*\)/g, ' ')
+    .replace(/\[([^\]]+)\]\([^)]*\)/g, '$1')
+    .replace(/[`*_>#|~-]/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim()
+}
 
 function parseTopic(raw: string): Topic | null {
   if (!raw.startsWith('---')) return null
@@ -25,7 +35,7 @@ function parseTopic(raw: string): Topic | null {
   const title = get('title')
   const chapter = Number(get('chapter'))
   if (!id || !title || ![1, 2].includes(chapter)) return null
-  return { id, title, chapter, html: marked.parse(body, { async: false }) as string }
+  return { id, title, chapter, html: marked.parse(body, { async: false }) as string, searchText: `${title} ${stripMarkdown(body)}`.toLocaleLowerCase('th') }
 }
 
 const topics = Object.values(rawFiles).map(parseTopic).filter(Boolean) as Topic[]
@@ -40,7 +50,13 @@ function App() {
   const [bookmarks, setBookmarks] = useState<string[]>([])
   const [resume, setResume] = useState<{ topicId: string; scrollY: number } | null>(null)
   const [settingsOpen, setSettingsOpen] = useState(false)
+  const [searchQuery, setSearchQuery] = useState('')
   const topic = useMemo(() => topics.find(item => item.id === topicId), [topicId])
+  const searchResults = useMemo(() => {
+    const query = searchQuery.trim().toLocaleLowerCase('th')
+    if (!query) return []
+    return topics.filter(item => item.id.toLocaleLowerCase().includes(query) || item.searchText.includes(query)).slice(0, 20)
+  }, [searchQuery])
 
   useEffect(() => {
     Promise.all([loadPrefs(), loadBookmarks(), loadProgress()]).then(([savedPrefs, savedBookmarks, progress]) => {
@@ -55,15 +71,13 @@ function App() {
 
   useEffect(() => {
     if (view !== 'read') return
+    const targetScroll = resume?.topicId === topicId ? resume.scrollY : 0
+    const timer = window.setTimeout(() => window.scrollTo(0, targetScroll), 0)
     const onScroll = () => {
       const next = { topicId, scrollY: window.scrollY, updatedAt: Date.now() }
       setResume({ topicId, scrollY: window.scrollY })
       saveProgress(next)
     }
-    const timer = window.setTimeout(() => {
-      if (resume?.topicId === topicId && resume.scrollY > 0) window.scrollTo(0, resume.scrollY)
-      else window.scrollTo(0, 0)
-    }, 0)
     window.addEventListener('scroll', onScroll, { passive: true })
     return () => { window.clearTimeout(timer); window.removeEventListener('scroll', onScroll) }
   }, [view, topicId])
@@ -102,8 +116,13 @@ function App() {
     const part = (tocData as any).parts?.[0]
     return <main className="shell">
       <header className="topbar"><button onClick={() => setView('cover')}>←</button><div><small>ตำรา นิพนธ์ฟาร์ม</small><h1>สารบัญ</h1></div></header>
+      <section className="search-panel">
+        <label htmlFor="reader-search">ค้นหาใน Chapter 1–2</label>
+        <input id="reader-search" type="search" value={searchQuery} onChange={event => setSearchQuery(event.target.value)} placeholder="เช่น พฤติกรรม, Duroc, heterosis" />
+        {searchQuery.trim() && <div className="search-results" aria-live="polite">{searchResults.length ? searchResults.map(item => <button key={item.id} onClick={() => openTopic(item.id)}><span>{item.id}</span><div><strong>{item.title}</strong><small>บทที่ {item.chapter}</small></div></button>) : <p>ไม่พบคำที่ค้นหา</p>}</div>}
+      </section>
       {bookmarks.length > 0 && <section className="bookmark-strip"><strong>บุ๊กมาร์ก</strong>{bookmarks.map(id => { const item = topics.find(t => t.id === id); return item ? <button key={id} onClick={() => openTopic(id)}>{id} · {item.title}</button> : null })}</section>}
-      {part?.chapters?.filter((chapter: any) => [1, 2].includes(chapter.chapter)).map((chapter: any) => <section className="chapter" key={chapter.chapter}>
+      {!searchQuery.trim() && part?.chapters?.filter((chapter: any) => [1, 2].includes(chapter.chapter)).map((chapter: any) => <section className="chapter" key={chapter.chapter}>
         <h2>บทที่ {chapter.chapter} · {chapter.title}</h2>
         {chapter.topics.map((item: any) => <button key={item.id} onClick={() => openTopic(item.id)}>
           <span>{item.id}</span><strong>{item.title}</strong>{bookmarks.includes(item.id) && <em aria-label="บุ๊กมาร์ก">★</em>}
