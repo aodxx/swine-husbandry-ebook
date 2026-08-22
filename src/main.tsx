@@ -8,6 +8,7 @@ import { BookReader } from './components/BookReader'
 import { ReaderOverlay, type GlossaryDetail, type OverlayState, type SourceDetail } from './components/ReaderOverlay'
 import { decorateContentHtml } from './lib/contentInteractions'
 import { loadBookmarks, loadPrefs, loadProgress, saveBookmarks, savePrefs, saveProgress, type ReaderPrefs, type Theme } from './lib/storage'
+import './pwa'
 import './styles.css'
 
 type Topic = { id: string; title: string; chapter: number; html: string; searchText: string; sourceIds: string[] }
