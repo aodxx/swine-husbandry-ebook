@@ -2,8 +2,8 @@
   "schema_version": "1.0",
   "project": "swine-husbandry-ebook",
   "last_updated": "2026-08-23",
-  "current_focus": "2.15",
-  "next_topic": "2.15",
+  "current_focus": "3.1",
+  "next_topic": "3.1",
   "allowed_statuses": [
     "TODO",
     "RESEARCHING",
@@ -5824,7 +5824,7 @@
       "notes": "Foundation initialized; research not started."
     }
   ],
-  "workflow_state": "CHAPTER_2_CONTENT_PRODUCTION",
+  "workflow_state": "CHAPTER_2_CLOSED_CHAPTER_3_LOCKED",
   "chapter_closures": {
     "1": {
       "status": "OWNER_REVIEW_PASSED",
@@ -5848,15 +5848,45 @@
       "next_topic": "2.1",
       "next_topic_locked": false,
       "notes": "Chapter 1 closure completed and Owner Review passed. Chapter 2 content production is now authorized."
+    },
+    "2": {
+      "status": "FULL_CHAPTER_AUDITED",
+      "closed_date": "2026-08-23",
+      "subtopics": [
+        "2.1",
+        "2.2",
+        "2.3",
+        "2.4",
+        "2.5",
+        "2.6",
+        "2.7",
+        "2.8",
+        "2.9",
+        "2.10",
+        "2.11",
+        "2.12",
+        "2.13",
+        "2.14",
+        "2.15"
+      ],
+      "source_count": 62,
+      "audit_report": "docs/audits/chapter-02-full-audit.md",
+      "validation": "PASS",
+      "owner_review_required": true,
+      "next_topic": "3.1",
+      "next_topic_locked": true,
+      "notes": "Full Chapter 2 Quality Audit completed. Chapter 3 must not start until separately authorized."
     }
   },
   "chapter_2_production": {
-    "status": "READY_FOR_FULL_AUDIT",
+    "status": "FULL_CHAPTER_AUDITED",
     "current_topic": "2.15",
-    "next_topic": "2.15",
+    "next_topic": "3.1",
     "one_subtopic_at_a_time": true,
     "golden_chapter_reference": "1",
     "stop_after": "2.15",
-    "do_not_start_chapter_3": true
+    "do_not_start_chapter_3": true,
+    "next_topic_locked": true,
+    "audit_report": "docs/audits/chapter-02-full-audit.md"
   }
 }

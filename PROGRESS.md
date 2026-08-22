@@ -4,7 +4,7 @@ Generated from `data/research-status.json` on 2026-08-23. Do not edit counts man
 
 ## Current Project State
 
-Chapter 1 status: `OWNER_REVIEW_PASSED`. Current Focus is `2.15` — พันธุกรรม สุขภาพ และพฤติกรรม. Next Topic is `2.15` — พันธุกรรม สุขภาพ และพฤติกรรม; `CHAPTER_2_CONTENT_PRODUCTION`.
+Chapter 1 status: `OWNER_REVIEW_PASSED`. Current Focus is `3.1` — ประเมินความพร้อมก่อนเลี้ยง. Next Topic is `3.1` — ประเมินความพร้อมก่อนเลี้ยง; `CHAPTER_2_CLOSED_CHAPTER_3_LOCKED`.
 
 ## Current State Count
 
@@ -36,11 +36,11 @@ Chapter 1 status: `OWNER_REVIEW_PASSED`. Current Focus is `2.15` — พัน�
 
 ## Current Focus
 
-- **Current Topic:** `2.15` — พันธุกรรม สุขภาพ และพฤติกรรม
-- **Next Topic:** `2.15` — พันธุกรรม สุขภาพ และพฤติกรรม
-- **Next Topic Gate:** `CHAPTER_2_CONTENT_PRODUCTION`
-- **Research status:** `EDITORIAL_REVIEW`
-- **Last reviewed:** 2026-08-23
+- **Current Topic:** `3.1` — ประเมินความพร้อมก่อนเลี้ยง
+- **Next Topic:** `3.1` — ประเมินความพร้อมก่อนเลี้ยง
+- **Next Topic Gate:** `CHAPTER_2_CLOSED_CHAPTER_3_LOCKED`
+- **Research status:** `TODO`
+- **Last reviewed:** None
 
 ## Foundation Checklist
 
