@@ -48,24 +48,19 @@ test('reader settings and bookmark survive reload', async ({ page }) => {
   await expect(page.locator('.bookmark-strip')).toContainText('1.1')
 })
 
-test('glossary terms open an accessible definition dialog', async ({ page }) => {
+test('glossary browser opens accessible term details', async ({ page }) => {
   await page.goto('./')
   await page.getByRole('button', { name: 'เปิดตำรา' }).click()
+  await page.getByRole('button', { name: 'เปิดอภิธานศัพท์' }).click()
+  await expect(page.getByRole('dialog', { name: 'อภิธานศัพท์', exact: true })).toBeVisible()
 
-  let opened = false
-  for (let index = 0; index < 32; index += 1) {
-    const terms = page.locator('.glossary-term')
-    if (await terms.count()) {
-      await terms.first().click()
-      await expect(page.getByRole('dialog', { name: /อภิธานศัพท์/ })).toBeVisible()
-      opened = true
-      break
-    }
-    const next = page.getByRole('button', { name: 'ถัดไป →' })
-    if (await next.isDisabled()) break
-    await next.click()
-  }
-  expect(opened).toBeTruthy()
+  const firstTerm = page.locator('.glossary-browser-list button').first()
+  await expect(firstTerm).toBeVisible()
+  const termName = (await firstTerm.locator('strong').textContent())?.trim() ?? ''
+  expect(termName.length).toBeGreaterThan(0)
+  await firstTerm.click()
+  await expect(page.getByRole('dialog', { name: new RegExp(`อภิธานศัพท์ ${termName}`) })).toBeVisible()
+  await expect(page.locator('.reference-body')).toBeVisible()
 })
 
 test('book mode paginates and honors reduced motion', async ({ page }) => {
@@ -108,6 +103,14 @@ test('reader reloads offline after first online visit', async ({ page, context }
   await page.evaluate(async () => {
     if ('serviceWorker' in navigator) await navigator.serviceWorker.ready
   })
+  await page.waitForFunction(() => Boolean(navigator.serviceWorker?.controller), undefined, { timeout: 15000 })
+
+  const cachedAssetCount = await page.evaluate(async () => {
+    const keys = await caches.keys()
+    const requests = (await Promise.all(keys.map(async key => (await caches.open(key)).keys()))).flat()
+    return requests.filter(request => /\/assets\/.*\.(?:js|css)(?:\?|$)/.test(new URL(request.url).pathname)).length
+  })
+  expect(cachedAssetCount).toBeGreaterThanOrEqual(2)
 
   await context.setOffline(true)
   await page.reload({ waitUntil: 'domcontentloaded' })
