@@ -3,7 +3,7 @@
   "project": "swine-husbandry-ebook",
   "last_updated": "2026-08-23",
   "current_focus": "2.1",
-  "next_topic": "2.1",
+  "next_topic": "2.2",
   "allowed_statuses": [
     "TODO",
     "RESEARCHING",
@@ -222,19 +222,22 @@
     {
       "id": "2.1",
       "title": "สุกรพันธุ์แท้และลูกผสม",
-      "status": "TODO",
-      "research_started": null,
-      "research_completed": null,
-      "draft_completed": null,
-      "fact_checked": null,
+      "status": "EDITORIAL_REVIEW",
+      "research_started": "2026-08-23",
+      "research_completed": "2026-08-23",
+      "draft_completed": "2026-08-23",
+      "fact_checked": "2026-08-23",
       "approved": null,
-      "last_reviewed": null,
-      "reviewed_by": null,
-      "source_count": 0,
+      "last_reviewed": "2026-08-23",
+      "reviewed_by": "Manus AI",
+      "source_count": 7,
       "risk_level": "normal",
       "farm_context": false,
-      "remaining_questions": [],
-      "notes": "Foundation initialized; research not started."
+      "remaining_questions": [
+        "ทบทวนศัพท์ breed/line ใน breeding program ไทยเพิ่มเติมเมื่อมีแหล่งตรง"
+      ],
+      "notes": "Subtopic Quality Gate passed: scope, research, source evaluation, facts, conflict check, numeric claim check, draft, fact check, citation, Thai editorial review, and scope-overlap check complete. No universal performance benchmark used.",
+      "subtopic_quality_gate": "PASS"
     },
     {
       "id": "2.2",
@@ -5779,7 +5782,7 @@
       "notes": "Foundation initialized; research not started."
     }
   ],
-  "workflow_state": "CHAPTER_2_LOCKED_NO_CONTENT_PRODUCTION",
+  "workflow_state": "CHAPTER_2_CONTENT_PRODUCTION",
   "chapter_closures": {
     "1": {
       "status": "OWNER_REVIEW_PASSED",
@@ -5801,8 +5804,17 @@
       "audit_report": "docs/research/chapter-01-audit.md",
       "owner_review_required": false,
       "next_topic": "2.1",
-      "next_topic_locked": true,
-      "notes": "Chapter 1 closure completed. Do not start 2.1 in this task."
+      "next_topic_locked": false,
+      "notes": "Chapter 1 closure completed and Owner Review passed. Chapter 2 content production is now authorized."
     }
+  },
+  "chapter_2_production": {
+    "status": "IN_PROGRESS",
+    "current_topic": "2.1",
+    "next_topic": "2.2",
+    "one_subtopic_at_a_time": true,
+    "golden_chapter_reference": "1",
+    "stop_after": "2.15",
+    "do_not_start_chapter_3": true
   }
 }

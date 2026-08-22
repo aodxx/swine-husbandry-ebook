@@ -4,19 +4,19 @@ Generated from `data/research-status.json` on 2026-08-23. Do not edit counts man
 
 ## Current Project State
 
-Chapter 1 status: `OWNER_REVIEW_PASSED`. Current Focus is `2.1` — สุกรพันธุ์แท้และลูกผสม. Next Topic is `2.1` — สุกรพันธุ์แท้และลูกผสม; `CHAPTER_2_LOCKED_NO_CONTENT_PRODUCTION`.
+Chapter 1 status: `OWNER_REVIEW_PASSED`. Current Focus is `2.1` — สุกรพันธุ์แท้และลูกผสม. Next Topic is `2.2` — Large White / Yorkshire; `CHAPTER_2_CONTENT_PRODUCTION`.
 
 ## Current State Count
 
 | Status | Count |
 |---|---:|
-| TODO | 327 |
+| TODO | 326 |
 | RESEARCHING | 0 |
 | SOURCES_COLLECTED | 0 |
 | FACTS_EXTRACTED | 0 |
 | DRAFTED | 0 |
 | FACT_CHECKED | 0 |
-| EDITORIAL_REVIEW | 11 |
+| EDITORIAL_REVIEW | 12 |
 | APPROVED | 0 |
 | PUBLISHED | 0 |
 | BLOCKED | 0 |
@@ -28,19 +28,19 @@ Chapter 1 status: `OWNER_REVIEW_PASSED`. Current Focus is `2.1` — สุกร
 
 | Milestone reached | Count |
 |---|---:|
-| Drafted or beyond | 11 |
-| Fact checked or beyond | 11 |
-| Editorial review or beyond | 11 |
+| Drafted or beyond | 12 |
+| Fact checked or beyond | 12 |
+| Editorial review or beyond | 12 |
 | Approved | 0 |
 | Published | 0 |
 
 ## Current Focus
 
 - **Current Topic:** `2.1` — สุกรพันธุ์แท้และลูกผสม
-- **Next Topic:** `2.1` — สุกรพันธุ์แท้และลูกผสม
-- **Next Topic Gate:** `CHAPTER_2_LOCKED_NO_CONTENT_PRODUCTION`
-- **Research status:** `TODO`
-- **Last reviewed:** None
+- **Next Topic:** `2.2` — Large White / Yorkshire
+- **Next Topic Gate:** `CHAPTER_2_CONTENT_PRODUCTION`
+- **Research status:** `EDITORIAL_REVIEW`
+- **Last reviewed:** 2026-08-23
 
 ## Foundation Checklist
 
