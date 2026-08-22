@@ -69,7 +69,7 @@ export function BookReader({ html, title, chapter, fontScale, lineHeight, hasPre
       </div>
     </div>
     <nav className="book-controls" aria-label="ควบคุมหน้าหนังสือ">
-      <button onClick={previousPage} disabled={page === 0 && !hasPreviousTopic}>←</button><button onClick={onOpenToc}>สารบัญ</button><span>{spread === 2 ? 'สองหน้า' : 'หนึ่งหน้า'}</span><button onClick={nextPage} disabled={page >= maxStart && !hasNextTopic}>→</button>
+      <button onClick={previousPage} disabled={page === 0 && !hasPreviousTopic} aria-label="หน้าก่อนหน้า">←</button><button onClick={onOpenToc}>สารบัญ</button><span>{spread === 2 ? 'สองหน้า' : 'หนึ่งหน้า'}</span><button onClick={nextPage} disabled={page >= maxStart && !hasNextTopic} aria-label="หน้าถัดไป">→</button>
     </nav>
   </section>
 }
