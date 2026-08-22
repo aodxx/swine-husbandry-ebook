@@ -1526,6 +1526,62 @@
         "2.7"
       ],
       "notes": "Breed descriptions used only as contextual phenotype references."
+    },
+    {
+      "id": "SRC-110",
+      "title": "Swine Breeding Systems for Alternative Pork Chains",
+      "organization": "Michigan State University",
+      "url": "https://www.canr.msu.edu/resources/swine_breeding_systems_for_alternative_pork_chains_breeding_programs",
+      "publication_date": null,
+      "accessed_date": "2026-08-23",
+      "tier": "C",
+      "language": "en",
+      "topics": [
+        "2.8"
+      ],
+      "notes": "Context-specific source; no universal Thai benchmark and no individual-animal advice."
+    },
+    {
+      "id": "SRC-111",
+      "title": "Genetic Improvement of Sire and Dam Lines for Enhanced Performance of Terminal Crossbreeding Systems",
+      "organization": "National Swine Improvement Federation / Pork Gateway",
+      "url": "https://porkgateway.org/resource/genetic-improvement-of-sire-and-dam-lines-for-enhanced-performance-of-terminal-crossbreeding-systems/",
+      "publication_date": null,
+      "accessed_date": "2026-08-23",
+      "tier": "C",
+      "language": "en",
+      "topics": [
+        "2.8"
+      ],
+      "notes": "Context-specific source; no universal Thai benchmark and no individual-animal advice."
+    },
+    {
+      "id": "SRC-112",
+      "title": "Pedigree and genomic evaluation of pigs using a terminal-cross model",
+      "organization": "Genetics Selection Evolution",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4825087/",
+      "publication_date": null,
+      "accessed_date": "2026-08-23",
+      "tier": "C",
+      "language": "en",
+      "topics": [
+        "2.8"
+      ],
+      "notes": "Context-specific source; no universal Thai benchmark and no individual-animal advice."
+    },
+    {
+      "id": "SRC-113",
+      "title": "Importance and variability of the paternal component in sow reproductive traits",
+      "organization": "Journal of Applied Genetics",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11561000/",
+      "publication_date": null,
+      "accessed_date": "2026-08-23",
+      "tier": "C",
+      "language": "en",
+      "topics": [
+        "2.8"
+      ],
+      "notes": "Context-specific source; no universal Thai benchmark and no individual-animal advice."
     }
   ],
   "notes": "Source records are topic-specific and were added after retrieval/evaluation for topic 1.1.",

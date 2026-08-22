@@ -4,19 +4,19 @@ Generated from `data/research-status.json` on 2026-08-23. Do not edit counts man
 
 ## Current Project State
 
-Chapter 1 status: `OWNER_REVIEW_PASSED`. Current Focus is `2.7` — จุดเด่น–จุดด้อยของแต่ละพันธุ์. Next Topic is `2.8` — สายแม่และสายพ่อ; `CHAPTER_2_CONTENT_PRODUCTION`.
+Chapter 1 status: `OWNER_REVIEW_PASSED`. Current Focus is `2.8` — สายแม่และสายพ่อ. Next Topic is `2.9` — Hybrid vigor / Heterosis; `CHAPTER_2_CONTENT_PRODUCTION`.
 
 ## Current State Count
 
 | Status | Count |
 |---|---:|
-| TODO | 320 |
+| TODO | 319 |
 | RESEARCHING | 0 |
 | SOURCES_COLLECTED | 0 |
 | FACTS_EXTRACTED | 0 |
 | DRAFTED | 0 |
 | FACT_CHECKED | 0 |
-| EDITORIAL_REVIEW | 18 |
+| EDITORIAL_REVIEW | 19 |
 | APPROVED | 0 |
 | PUBLISHED | 0 |
 | BLOCKED | 0 |
@@ -28,16 +28,16 @@ Chapter 1 status: `OWNER_REVIEW_PASSED`. Current Focus is `2.7` — จุดเ
 
 | Milestone reached | Count |
 |---|---:|
-| Drafted or beyond | 18 |
-| Fact checked or beyond | 18 |
-| Editorial review or beyond | 18 |
+| Drafted or beyond | 19 |
+| Fact checked or beyond | 19 |
+| Editorial review or beyond | 19 |
 | Approved | 0 |
 | Published | 0 |
 
 ## Current Focus
 
-- **Current Topic:** `2.7` — จุดเด่น–จุดด้อยของแต่ละพันธุ์
-- **Next Topic:** `2.8` — สายแม่และสายพ่อ
+- **Current Topic:** `2.8` — สายแม่และสายพ่อ
+- **Next Topic:** `2.9` — Hybrid vigor / Heterosis
 - **Next Topic Gate:** `CHAPTER_2_CONTENT_PRODUCTION`
 - **Research status:** `EDITORIAL_REVIEW`
 - **Last reviewed:** 2026-08-23

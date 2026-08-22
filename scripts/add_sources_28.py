@@ -1,0 +1,6 @@
+import json
+p='/home/ubuntu/swine-husbandry-ebook/data/sources.json';d=json.load(open(p));ids={x['id'] for x in d['sources']}
+items=[('SRC-110','Swine Breeding Systems for Alternative Pork Chains','Michigan State University','https://www.canr.msu.edu/resources/swine_breeding_systems_for_alternative_pork_chains_breeding_programs'),('SRC-111','Genetic Improvement of Sire and Dam Lines for Enhanced Performance of Terminal Crossbreeding Systems','National Swine Improvement Federation / Pork Gateway','https://porkgateway.org/resource/genetic-improvement-of-sire-and-dam-lines-for-enhanced-performance-of-terminal-crossbreeding-systems/'),('SRC-112','Pedigree and genomic evaluation of pigs using a terminal-cross model','Genetics Selection Evolution','https://pmc.ncbi.nlm.nih.gov/articles/PMC4825087/'),('SRC-113','Importance and variability of the paternal component in sow reproductive traits','Journal of Applied Genetics','https://pmc.ncbi.nlm.nih.gov/articles/PMC11561000/')]
+for i,t,o,u in items:
+ if i not in ids:d['sources'].append({'id':i,'title':t,'organization':o,'url':u,'publication_date':None,'accessed_date':'2026-08-23','tier':'C','language':'en','topics':['2.8'],'notes':'Context-specific source; no universal Thai benchmark and no individual-animal advice.'})
+json.dump(d,open(p,'w'),ensure_ascii=False,indent=2);open(p,'a').write('\n')
