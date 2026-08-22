@@ -4,19 +4,19 @@ Generated from `data/research-status.json` on 2026-08-23. Do not edit counts man
 
 ## Current Project State
 
-Chapter 1 status: `OWNER_REVIEW_PASSED`. Current Focus is `3.4` — เลือกระบบพ่อแม่พันธุ์หรือหมูขุน. Next Topic is `3.4` — เลือกระบบพ่อแม่พันธุ์หรือหมูขุน; `CHAPTER_3_CONTENT_PRODUCTION`.
+Chapter 1 status: `OWNER_REVIEW_PASSED`. Current Focus is `3.5` — Closed herd. Next Topic is `3.5` — Closed herd; `CHAPTER_3_CONTENT_PRODUCTION`.
 
 ## Current State Count
 
 | Status | Count |
 |---|---:|
-| TODO | 309 |
+| TODO | 308 |
 | RESEARCHING | 0 |
 | SOURCES_COLLECTED | 0 |
 | FACTS_EXTRACTED | 0 |
 | DRAFTED | 0 |
 | FACT_CHECKED | 0 |
-| EDITORIAL_REVIEW | 29 |
+| EDITORIAL_REVIEW | 30 |
 | APPROVED | 0 |
 | PUBLISHED | 0 |
 | BLOCKED | 0 |
@@ -28,16 +28,16 @@ Chapter 1 status: `OWNER_REVIEW_PASSED`. Current Focus is `3.4` — เลือ
 
 | Milestone reached | Count |
 |---|---:|
-| Drafted or beyond | 29 |
-| Fact checked or beyond | 29 |
-| Editorial review or beyond | 29 |
+| Drafted or beyond | 30 |
+| Fact checked or beyond | 30 |
+| Editorial review or beyond | 30 |
 | Approved | 0 |
 | Published | 0 |
 
 ## Current Focus
 
-- **Current Topic:** `3.4` — เลือกระบบพ่อแม่พันธุ์หรือหมูขุน
-- **Next Topic:** `3.4` — เลือกระบบพ่อแม่พันธุ์หรือหมูขุน
+- **Current Topic:** `3.5` — Closed herd
+- **Next Topic:** `3.5` — Closed herd
 - **Next Topic Gate:** `CHAPTER_3_CONTENT_PRODUCTION`
 - **Research status:** `TODO`
 - **Last reviewed:** None
