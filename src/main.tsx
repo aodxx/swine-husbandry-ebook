@@ -2,6 +2,7 @@ import { StrictMode, useEffect, useMemo, useState } from 'react'
 import { createRoot } from 'react-dom/client'
 import { marked } from 'marked'
 import tocData from '../data/toc.json'
+import { BookReader } from './components/BookReader'
 import { loadBookmarks, loadPrefs, loadProgress, saveBookmarks, savePrefs, saveProgress, type ReaderPrefs, type Theme } from './lib/storage'
 import './styles.css'
 
@@ -70,7 +71,7 @@ function App() {
   useEffect(() => { savePrefs(prefs) }, [prefs])
 
   useEffect(() => {
-    if (view !== 'read') return
+    if (view !== 'read' || prefs.readingMode !== 'reading') return
     const targetScroll = resume?.topicId === topicId ? resume.scrollY : 0
     const timer = window.setTimeout(() => window.scrollTo(0, targetScroll), 0)
     const onScroll = () => {
@@ -80,11 +81,12 @@ function App() {
     }
     window.addEventListener('scroll', onScroll, { passive: true })
     return () => { window.clearTimeout(timer); window.removeEventListener('scroll', onScroll) }
-  }, [view, topicId])
+  }, [view, topicId, prefs.readingMode])
 
   function openTopic(id: string, scrollY = 0) {
     setTopicId(id)
     setResume({ topicId: id, scrollY })
+    saveProgress({ topicId: id, scrollY, updatedAt: Date.now() })
     setView('read')
   }
 
@@ -138,25 +140,41 @@ function App() {
   const bookmarked = bookmarks.includes(topic.id)
   const readerStyle = { '--reader-scale': prefs.fontScale, '--reader-leading': prefs.lineHeight } as React.CSSProperties
 
-  return <main className="reader" style={readerStyle}>
+  return <main className={`reader mode-${prefs.readingMode}`} style={readerStyle}>
     <header className="readerbar">
       <button onClick={() => setView('toc')} aria-label="เปิดสารบัญ">☰</button>
       <div><small>บทที่ {topic.chapter}</small><strong>{topic.title}</strong></div>
       <div className="reader-actions"><button className={bookmarked ? 'active' : ''} onClick={() => toggleBookmark(topic.id)} aria-label={bookmarked ? 'ลบบุ๊กมาร์ก' : 'เพิ่มบุ๊กมาร์ก'}>{bookmarked ? '★' : '☆'}</button><button onClick={() => setSettingsOpen(true)} aria-label="การตั้งค่าการอ่าน">Aa</button></div>
     </header>
-    <article className="prose" dangerouslySetInnerHTML={{ __html: topic.html }} />
-    <nav className="bottomnav">
-      <button disabled={!previous} onClick={() => previous && openTopic(previous.id)}>← ก่อนหน้า</button>
-      <button onClick={() => setView('toc')}>สารบัญ</button>
-      <button disabled={!next} onClick={() => next && openTopic(next.id)}>ถัดไป →</button>
-    </nav>
+
+    {prefs.readingMode === 'book' ? <BookReader
+      html={topic.html}
+      title={topic.title}
+      chapter={topic.chapter}
+      fontScale={prefs.fontScale}
+      lineHeight={prefs.lineHeight}
+      hasPreviousTopic={Boolean(previous)}
+      hasNextTopic={Boolean(next)}
+      onPreviousTopic={() => previous && openTopic(previous.id)}
+      onNextTopic={() => next && openTopic(next.id)}
+      onOpenToc={() => setView('toc')}
+    /> : <>
+      <article className="prose" dangerouslySetInnerHTML={{ __html: topic.html }} />
+      <nav className="bottomnav">
+        <button disabled={!previous} onClick={() => previous && openTopic(previous.id)}>← ก่อนหน้า</button>
+        <button onClick={() => setView('toc')}>สารบัญ</button>
+        <button disabled={!next} onClick={() => next && openTopic(next.id)}>ถัดไป →</button>
+      </nav>
+    </>}
+
     {settingsOpen && <div className="modal-backdrop" role="presentation" onClick={() => setSettingsOpen(false)}>
       <section className="settings-sheet" role="dialog" aria-modal="true" aria-label="การตั้งค่าการอ่าน" onClick={event => event.stopPropagation()}>
         <header><div><small>Reader Settings</small><h2>การตั้งค่าการอ่าน</h2></div><button onClick={() => setSettingsOpen(false)} aria-label="ปิด">×</button></header>
+        <fieldset><legend>โหมดอ่าน</legend><div className="theme-grid mode-grid"><button className={prefs.readingMode === 'reading' ? 'selected' : ''} onClick={() => updatePrefs({ readingMode: 'reading' })}>Reading Mode</button><button className={prefs.readingMode === 'book' ? 'selected' : ''} onClick={() => updatePrefs({ readingMode: 'book' })}>Book Mode</button></div></fieldset>
         <label>ขนาดตัวอักษร <output>{Math.round(prefs.fontScale * 100)}%</output><input type="range" min="0.9" max="1.3" step="0.05" value={prefs.fontScale} onChange={event => updatePrefs({ fontScale: Number(event.target.value) })}/></label>
         <label>ระยะห่างบรรทัด <output>{prefs.lineHeight.toFixed(2)}</output><input type="range" min="1.55" max="2.15" step="0.1" value={prefs.lineHeight} onChange={event => updatePrefs({ lineHeight: Number(event.target.value) })}/></label>
         <fieldset><legend>ธีม</legend><div className="theme-grid">{(['light','sepia','dark'] as Theme[]).map(theme => <button key={theme} className={prefs.theme === theme ? 'selected' : ''} onClick={() => updatePrefs({ theme })}>{theme === 'light' ? 'กระดาษอุ่น' : theme === 'sepia' ? 'ซีเปีย' : 'กลางคืน'}</button>)}</div></fieldset>
-        <p className="settings-note">Book Mode และเสียงพลิกหน้าจะเปิดในขั้นถัดไป โดยค่าการอ่านชุดนี้จะคงอยู่ในเครื่องผ่าน IndexedDB</p>
+        <p className="settings-note">Book Mode แบ่งหน้าใหม่ตามขนาดจอและตัวอักษรแบบ runtime หากไม่ต้องการ motion ระบบรองรับ reduced motion และสามารถสลับกลับ Reading Mode ได้ตลอดเวลา</p>
       </section>
     </div>}
   </main>
