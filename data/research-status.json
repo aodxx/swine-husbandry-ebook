@@ -2,8 +2,8 @@
   "schema_version": "1.0",
   "project": "swine-husbandry-ebook",
   "last_updated": "2026-08-23",
-  "current_focus": "2.4",
-  "next_topic": "2.5",
+  "current_focus": "2.5",
+  "next_topic": "2.6",
   "allowed_statuses": [
     "TODO",
     "RESEARCHING",
@@ -302,19 +302,22 @@
     {
       "id": "2.5",
       "title": "Pietrain",
-      "status": "TODO",
-      "research_started": null,
-      "research_completed": null,
-      "draft_completed": null,
-      "fact_checked": null,
+      "status": "EDITORIAL_REVIEW",
+      "research_started": "2026-08-23",
+      "research_completed": "2026-08-23",
+      "draft_completed": "2026-08-23",
+      "fact_checked": "2026-08-23",
       "approved": null,
-      "last_reviewed": null,
-      "reviewed_by": null,
-      "source_count": 0,
+      "last_reviewed": "2026-08-23",
+      "reviewed_by": "Manus AI",
+      "source_count": 5,
       "risk_level": "normal",
       "farm_context": false,
-      "remaining_questions": [],
-      "notes": "Foundation initialized; research not started."
+      "remaining_questions": [
+        "ยังไม่มีข้อมูลไทยที่เปรียบเทียบ Pietrain ทุก line และยังไม่ควรสรุป prevalence/risk ของ RYR1 ในประชากรไทยจากแหล่งต่างประเทศ"
+      ],
+      "notes": "Subtopic Quality Gate passed with additional high-risk review. RYR1/porcine malignant hyperthermia is limited to genetics and evidence interpretation; no diagnosis, treatment, medication or vaccine advice. No universal Pietrain performance benchmark used.",
+      "subtopic_quality_gate": "PASS"
     },
     {
       "id": "2.6",
@@ -5819,8 +5822,8 @@
   },
   "chapter_2_production": {
     "status": "IN_PROGRESS",
-    "current_topic": "2.4",
-    "next_topic": "2.5",
+    "current_topic": "2.5",
+    "next_topic": "2.6",
     "one_subtopic_at_a_time": true,
     "golden_chapter_reference": "1",
     "stop_after": "2.15",

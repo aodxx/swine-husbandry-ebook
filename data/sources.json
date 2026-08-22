@@ -1330,6 +1330,48 @@
         "2.4"
       ],
       "notes": "Thai government study metadata and accessible abstract; any numbers are specific to the tested crossbred prototype and must not become Duroc-wide targets."
+    },
+    {
+      "id": "SRC-096",
+      "title": "Pietrain Swine",
+      "organization": "Oklahoma State University, Breeds of Livestock",
+      "url": "https://breeds.okstate.edu/swine/pietrain-swine",
+      "publication_date": null,
+      "accessed_date": "2026-08-23",
+      "tier": "C",
+      "language": "en",
+      "topics": [
+        "2.5"
+      ],
+      "notes": "University source for phenotype, breed history context and use in crossbreeding; performance figures are historical comparisons, not Thai benchmarks."
+    },
+    {
+      "id": "SRC-097",
+      "title": "SNP genotypes reveal breed substructure, selection signatures and highly inbred regions in Piétrain pigs",
+      "organization": "Animal Genetics / KU Leuven / PMC",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7003864/",
+      "publication_date": "2020-02",
+      "accessed_date": "2026-08-23",
+      "tier": "C",
+      "language": "en",
+      "topics": [
+        "2.5"
+      ],
+      "notes": "Peer-reviewed SNP/population study; results depend on sampled populations and do not certify individual animals."
+    },
+    {
+      "id": "SRC-098",
+      "title": "OMIA:000621-9823: Malignant hyperthermia in Sus scrofa",
+      "organization": "Online Mendelian Inheritance in Animals (OMIA)",
+      "url": "https://omia.org/OMIA000621/9823/",
+      "publication_date": "2026",
+      "accessed_date": "2026-08-23",
+      "tier": "C",
+      "language": "en",
+      "topics": [
+        "2.5"
+      ],
+      "notes": "Authoritative curated database for RYR1-related porcine malignant hyperthermia; not a veterinary diagnosis or individual DNA test."
     }
   ],
   "notes": "Source records are topic-specific and were added after retrieval/evaluation for topic 1.1.",
