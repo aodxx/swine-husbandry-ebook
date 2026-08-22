@@ -1,0 +1,19 @@
+{
+  "name": "ตำรา นิพนธ์ฟาร์ม — ศาสตร์และวิถีการเลี้ยงสุกร",
+  "short_name": "นิพนธ์ฟาร์ม",
+  "description": "ตำราการเลี้ยงสุกรแบบดิจิทัลสำหรับการอ่านบนมือถือ",
+  "lang": "th",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f4eedf",
+  "theme_color": "#48684e",
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
