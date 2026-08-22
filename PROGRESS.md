@@ -4,7 +4,7 @@ Generated from `data/research-status.json` on 2026-08-23. Do not edit counts man
 
 ## Current Project State
 
-Chapter 1 status: `OWNER_REVIEW_PASSED`. Current Focus is `3.12` — Checklist ก่อนเริ่มเลี้ยง. Next Topic is `3.12` — Checklist ก่อนเริ่มเลี้ยง; `CHAPTER_3_CONTENT_PRODUCTION`.
+Chapter 1 status: `OWNER_REVIEW_PASSED`. Current Focus is `3.12` — Checklist ก่อนเริ่มเลี้ยง. Next Topic is `4.1` — การเลือกพื้นที่; `CHAPTER_3_CLOSED_CHAPTER_4_LOCKED`.
 
 ## Current State Count
 
@@ -37,8 +37,8 @@ Chapter 1 status: `OWNER_REVIEW_PASSED`. Current Focus is `3.12` — Checklist �
 ## Current Focus
 
 - **Current Topic:** `3.12` — Checklist ก่อนเริ่มเลี้ยง
-- **Next Topic:** `3.12` — Checklist ก่อนเริ่มเลี้ยง
-- **Next Topic Gate:** `CHAPTER_3_CONTENT_PRODUCTION`
+- **Next Topic:** `4.1` — การเลือกพื้นที่
+- **Next Topic Gate:** `CHAPTER_3_CLOSED_CHAPTER_4_LOCKED`
 - **Research status:** `EDITORIAL_REVIEW`
 - **Last reviewed:** 2026-08-23
 

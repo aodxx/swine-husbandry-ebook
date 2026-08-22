@@ -3,7 +3,7 @@
   "project": "swine-husbandry-ebook",
   "last_updated": "2026-08-23",
   "current_focus": "3.12",
-  "next_topic": "3.12",
+  "next_topic": "4.1",
   "allowed_statuses": [
     "TODO",
     "RESEARCHING",
@@ -537,7 +537,8 @@
         "ต้องตรวจข้อกำหนดท้องถิ่นและกฎหมายสิ่งแวดล้อมฉบับปัจจุบันตามที่ตั้งจริงก่อนลงทุน"
       ],
       "notes": "Foundation initialized; research not started.",
-      "subtopic_quality_gate": "PASS"
+      "subtopic_quality_gate": "PASS",
+      "chapter_status": "FULL_CHAPTER_AUDITED"
     },
     {
       "id": "3.2",
@@ -557,7 +558,8 @@
         "ต้องประเมิน capacity และข้อกำหนดของฟาร์มจริง ไม่ใช้เลขเดียวแทนทุกระบบ"
       ],
       "notes": "Foundation initialized; research not started.",
-      "subtopic_quality_gate": "PASS"
+      "subtopic_quality_gate": "PASS",
+      "chapter_status": "FULL_CHAPTER_AUDITED"
     },
     {
       "id": "3.3",
@@ -577,7 +579,8 @@
         "ต้องทบทวนเป้าหมายเมื่อข้อมูลตลาด ต้นทุน หรือข้อกำหนดเปลี่ยน"
       ],
       "notes": "Foundation initialized; research not started.",
-      "subtopic_quality_gate": "PASS"
+      "subtopic_quality_gate": "PASS",
+      "chapter_status": "FULL_CHAPTER_AUDITED"
     },
     {
       "id": "3.4",
@@ -597,7 +600,8 @@
         "ต้องตรวจเงื่อนไขตลาดและข้อกำหนดจริงก่อนเลือกระบบ"
       ],
       "notes": "Foundation initialized; research not started.",
-      "subtopic_quality_gate": "PASS"
+      "subtopic_quality_gate": "PASS",
+      "chapter_status": "FULL_CHAPTER_AUDITED"
     },
     {
       "id": "3.5",
@@ -617,7 +621,8 @@
         "ต้องประเมินสถานะสุขภาพและแผนทดแทนของฝูงจริงร่วมกับสัตวแพทย์"
       ],
       "notes": "Foundation initialized; research not started.",
-      "subtopic_quality_gate": "PASS"
+      "subtopic_quality_gate": "PASS",
+      "chapter_status": "FULL_CHAPTER_AUDITED"
     },
     {
       "id": "3.6",
@@ -637,7 +642,8 @@
         "ต้องตรวจ flow พื้นที่ สุขภาพ และข้อกำหนดของระบบจริงก่อนลงทุน"
       ],
       "notes": "Foundation initialized; research not started.",
-      "subtopic_quality_gate": "PASS"
+      "subtopic_quality_gate": "PASS",
+      "chapter_status": "FULL_CHAPTER_AUDITED"
     },
     {
       "id": "3.7",
@@ -657,7 +663,8 @@
         "ต้องประเมินแหล่งสุกรเข้าและ health plan ของฟาร์มจริงร่วมกับสัตวแพทย์"
       ],
       "notes": "Foundation initialized; research not started.",
-      "subtopic_quality_gate": "PASS"
+      "subtopic_quality_gate": "PASS",
+      "chapter_status": "FULL_CHAPTER_AUDITED"
     },
     {
       "id": "3.8",
@@ -677,7 +684,8 @@
         "ต้องปรับ AIAO ตามอาคาร ตลาด และแผนสุขภาพของฟาร์มจริงร่วมกับผู้เชี่ยวชาญ"
       ],
       "notes": "Foundation initialized; research not started.",
-      "subtopic_quality_gate": "PASS"
+      "subtopic_quality_gate": "PASS",
+      "chapter_status": "FULL_CHAPTER_AUDITED"
     },
     {
       "id": "3.9",
@@ -697,7 +705,8 @@
         "ต้องขอใบเสนอราคาตามแบบและตรวจข้อกำหนดสถานที่จริงก่อนลงทุน"
       ],
       "notes": "Foundation initialized; research not started.",
-      "subtopic_quality_gate": "PASS"
+      "subtopic_quality_gate": "PASS",
+      "chapter_status": "FULL_CHAPTER_AUDITED"
     },
     {
       "id": "3.10",
@@ -717,7 +726,8 @@
         "ต้องใส่ราคาจริงจากเอกสาร ณ วันที่ตัดสินใจ และตรวจสมมติฐานกับผู้ทำบัญชี/ผู้เชี่ยวชาญ"
       ],
       "notes": "Foundation initialized; research not started.",
-      "subtopic_quality_gate": "PASS"
+      "subtopic_quality_gate": "PASS",
+      "chapter_status": "FULL_CHAPTER_AUDITED"
     },
     {
       "id": "3.11",
@@ -737,7 +747,8 @@
         "ต้องยืนยัน buyer specification และราคา/เงื่อนไขจริง ณ วันที่จะซื้อและขาย"
       ],
       "notes": "Foundation initialized; research not started.",
-      "subtopic_quality_gate": "PASS"
+      "subtopic_quality_gate": "PASS",
+      "chapter_status": "FULL_CHAPTER_AUDITED"
     },
     {
       "id": "3.12",
@@ -757,7 +768,8 @@
         "ต้องตรวจ version ของมาตรฐาน แบบฟอร์ม และข้อกำหนดพื้นที่จริงก่อนเริ่ม"
       ],
       "notes": "Foundation initialized; research not started.",
-      "subtopic_quality_gate": "PASS"
+      "subtopic_quality_gate": "PASS",
+      "chapter_status": "FULL_CHAPTER_AUDITED"
     },
     {
       "id": "4.1",
@@ -5860,7 +5872,7 @@
       "notes": "Foundation initialized; research not started."
     }
   ],
-  "workflow_state": "CHAPTER_3_CONTENT_PRODUCTION",
+  "workflow_state": "CHAPTER_3_CLOSED_CHAPTER_4_LOCKED",
   "chapter_closures": {
     "1": {
       "status": "OWNER_REVIEW_PASSED",
@@ -5926,15 +5938,20 @@
     "audit_report": "docs/audits/chapter-02-full-audit.md"
   },
   "chapter_3_production": {
-    "status": "IN_PROGRESS",
+    "status": "FULL_CHAPTER_AUDITED",
     "current_topic": "3.12",
-    "next_topic": "3.12",
+    "next_topic": "4.1",
     "one_subtopic_at_a_time": true,
     "golden_chapter_reference": "1",
     "golden_chapter_2_reference": "2",
     "stop_after": "3.12",
     "do_not_start_chapter_4": true,
     "legal_dynamic_review_required": true,
-    "cost_claim_policy": "EXAMPLE_ONLY unless current Thai source is verified"
-  }
+    "cost_claim_policy": "EXAMPLE_ONLY unless current Thai source is verified",
+    "completed_subtopics": "3.1-3.12",
+    "audit_status": "DONE",
+    "ready_for_owner_review": true
+  },
+  "chapter_4_locked": true,
+  "chapter_4_lock_reason": "Chapter 3 closed after Full Chapter 3 Quality Audit; do not start Chapter 4 without owner instruction."
 }
