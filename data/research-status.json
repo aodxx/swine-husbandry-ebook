@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "project": "swine-husbandry-ebook",
-  "last_updated": "2026-08-22",
+  "last_updated": "2026-08-23",
   "current_focus": "1.1",
   "next_topic": "1.2",
   "allowed_statuses": [
@@ -23,19 +23,23 @@
     {
       "id": "1.1",
       "title": "หมูคือสัตว์แบบไหน",
-      "status": "TODO",
-      "research_started": null,
-      "research_completed": null,
+      "status": "FACTS_EXTRACTED",
+      "research_started": "2026-08-23",
+      "research_completed": "2026-08-23",
       "draft_completed": null,
       "fact_checked": null,
       "approved": null,
-      "last_reviewed": null,
-      "reviewed_by": null,
-      "source_count": 0,
+      "last_reviewed": "2026-08-23",
+      "reviewed_by": "Manus AI",
+      "source_count": 9,
       "risk_level": "normal",
       "farm_context": false,
-      "remaining_questions": [],
-      "notes": "Foundation initialized; research not started."
+      "remaining_questions": [
+        "ตรวจ nomenclature จากแหล่ง authority เพิ่มเติม",
+        "ตรวจฉบับเต็ม/รายละเอียดระบบย่อยอาหารก่อนเขียนเชิงลึก",
+        "ค้นแหล่ง Tier A ไทยที่ตอบชีววิทยาพื้นฐานโดยตรง หากพบ"
+      ],
+      "notes": "Research questions, sources, facts, and conflicts recorded. Draft and approval not started."
     },
     {
       "id": "1.2",
