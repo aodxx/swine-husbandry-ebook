@@ -4,19 +4,19 @@ Generated from `data/research-status.json` on 2026-08-23. Do not edit counts man
 
 ## Current Project State
 
-Chapter 1 status: `OWNER_REVIEW_PASSED`. Current Focus is `3.2` — ควรเริ่มกี่ตัว. Next Topic is `3.2` — ควรเริ่มกี่ตัว; `CHAPTER_3_CONTENT_PRODUCTION`.
+Chapter 1 status: `OWNER_REVIEW_PASSED`. Current Focus is `3.3` — กำหนดเป้าหมายฟาร์ม. Next Topic is `3.3` — กำหนดเป้าหมายฟาร์ม; `CHAPTER_3_CONTENT_PRODUCTION`.
 
 ## Current State Count
 
 | Status | Count |
 |---|---:|
-| TODO | 311 |
+| TODO | 310 |
 | RESEARCHING | 0 |
 | SOURCES_COLLECTED | 0 |
 | FACTS_EXTRACTED | 0 |
 | DRAFTED | 0 |
 | FACT_CHECKED | 0 |
-| EDITORIAL_REVIEW | 27 |
+| EDITORIAL_REVIEW | 28 |
 | APPROVED | 0 |
 | PUBLISHED | 0 |
 | BLOCKED | 0 |
@@ -28,16 +28,16 @@ Chapter 1 status: `OWNER_REVIEW_PASSED`. Current Focus is `3.2` — ควรเ
 
 | Milestone reached | Count |
 |---|---:|
-| Drafted or beyond | 27 |
-| Fact checked or beyond | 27 |
-| Editorial review or beyond | 27 |
+| Drafted or beyond | 28 |
+| Fact checked or beyond | 28 |
+| Editorial review or beyond | 28 |
 | Approved | 0 |
 | Published | 0 |
 
 ## Current Focus
 
-- **Current Topic:** `3.2` — ควรเริ่มกี่ตัว
-- **Next Topic:** `3.2` — ควรเริ่มกี่ตัว
+- **Current Topic:** `3.3` — กำหนดเป้าหมายฟาร์ม
+- **Next Topic:** `3.3` — กำหนดเป้าหมายฟาร์ม
 - **Next Topic Gate:** `CHAPTER_3_CONTENT_PRODUCTION`
 - **Research status:** `TODO`
 - **Last reviewed:** None
