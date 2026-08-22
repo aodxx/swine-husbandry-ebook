@@ -1,0 +1,6 @@
+import json
+p='/home/ubuntu/swine-husbandry-ebook/data/sources.json';d=json.load(open(p));ids={x['id'] for x in d['sources']}
+items=[('SRC-117','Selection of pigs for improved coping with health and environmental challenges','Frontiers in Genetics','https://pmc.ncbi.nlm.nih.gov/articles/PMC3522143/'),('SRC-118','Spatial analysis and characteristics of pig farming in Thailand','BMC Veterinary Research','https://pmc.ncbi.nlm.nih.gov/articles/PMC5053203/'),('SRC-119','Estimation of Genetic Parameters and Trends for Length of Productive Life and Lifetime Production Traits in a Commercial Landrace and Yorkshire Swine Population in Northern Thailand','Asian-Australasian Journal of Animal Sciences','https://pmc.ncbi.nlm.nih.gov/articles/PMC5003981/'),('SRC-120','Genotype by environment interaction and breeding for robustness in livestock','Frontiers in Genetics','https://www.frontiersin.org/journals/genetics/articles/10.3389/fgene.2015.00310/full')]
+for i,t,o,u in items:
+ if i not in ids:d['sources'].append({'id':i,'title':t,'organization':o,'url':u,'publication_date':None,'accessed_date':'2026-08-23','tier':'C','language':'en','topics':['2.10'],'notes':'Context-specific; no universal Thai benchmark.'})
+json.dump(d,open(p,'w'),ensure_ascii=False,indent=2);open(p,'a').write('\n')

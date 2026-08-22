@@ -4,19 +4,19 @@ Generated from `data/research-status.json` on 2026-08-23. Do not edit counts man
 
 ## Current Project State
 
-Chapter 1 status: `OWNER_REVIEW_PASSED`. Current Focus is `2.9` — Hybrid vigor / Heterosis. Next Topic is `2.10` — การเลือกสายพันธุ์ให้เหมาะกับฟาร์ม; `CHAPTER_2_CONTENT_PRODUCTION`.
+Chapter 1 status: `OWNER_REVIEW_PASSED`. Current Focus is `2.10` — การเลือกสายพันธุ์ให้เหมาะกับฟาร์ม. Next Topic is `2.11` — การเลือกพ่อพันธุ์; `CHAPTER_2_CONTENT_PRODUCTION`.
 
 ## Current State Count
 
 | Status | Count |
 |---|---:|
-| TODO | 318 |
+| TODO | 317 |
 | RESEARCHING | 0 |
 | SOURCES_COLLECTED | 0 |
 | FACTS_EXTRACTED | 0 |
 | DRAFTED | 0 |
 | FACT_CHECKED | 0 |
-| EDITORIAL_REVIEW | 20 |
+| EDITORIAL_REVIEW | 21 |
 | APPROVED | 0 |
 | PUBLISHED | 0 |
 | BLOCKED | 0 |
@@ -28,16 +28,16 @@ Chapter 1 status: `OWNER_REVIEW_PASSED`. Current Focus is `2.9` — Hybrid vigor
 
 | Milestone reached | Count |
 |---|---:|
-| Drafted or beyond | 20 |
-| Fact checked or beyond | 20 |
-| Editorial review or beyond | 20 |
+| Drafted or beyond | 21 |
+| Fact checked or beyond | 21 |
+| Editorial review or beyond | 21 |
 | Approved | 0 |
 | Published | 0 |
 
 ## Current Focus
 
-- **Current Topic:** `2.9` — Hybrid vigor / Heterosis
-- **Next Topic:** `2.10` — การเลือกสายพันธุ์ให้เหมาะกับฟาร์ม
+- **Current Topic:** `2.10` — การเลือกสายพันธุ์ให้เหมาะกับฟาร์ม
+- **Next Topic:** `2.11` — การเลือกพ่อพันธุ์
 - **Next Topic Gate:** `CHAPTER_2_CONTENT_PRODUCTION`
 - **Research status:** `EDITORIAL_REVIEW`
 - **Last reviewed:** 2026-08-23
