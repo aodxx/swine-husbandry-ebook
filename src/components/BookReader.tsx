@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import '../interactions.css'
+import '../pwa'
 
 type Props = {
   html: string
