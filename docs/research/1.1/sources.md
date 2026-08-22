@@ -19,3 +19,15 @@
 ## Source selection conclusion
 
 ชุด Source นี้มีแหล่งวิจัย/ทบทวนวิชาการ 7 รายการ แหล่งมหาวิทยาลัยเสริม 1 รายการ และฐานข้อมูล taxonomy สำหรับค้นเบื้องต้น 1 รายการ ยังไม่พบแหล่ง Tier A ของกรมปศุสัตว์ที่ตอบชีววิทยาพื้นฐานของหัวข้อนี้โดยตรงจากการค้นรอบนี้ จึงไม่แต่งข้อมูลไทยขึ้นเอง และจะระบุข้อจำกัดด้านบริบทประเทศไทยหากนำไปเขียน Draft
+
+
+## Supplemental verification round
+
+| ID | Tier | แหล่งเผยแพร่/ผู้เขียน | ปี | ชื่อเรื่อง | URL | ผลการตรวจสอบ |
+|---|---|---|---:|---|---|---|
+| SRC-010 | C-authoritative taxonomy | American Society of Mammalogists, Mammal Diversity Database v2.5 | 2026 | *Sus domesticus* — Domestic Pig; *Sus scrofa* — Eurasian Wild Pig | https://www.mammaldiversity.org/taxon/1006374/ ; https://www.mammaldiversity.org/taxon/1006377/ | MDD รุ่น v2.5 แยก *Sus domesticus* เป็น Domestic Pig และระบุ *Sus scrofa* เป็น Eurasian Wild Pig พร้อมหมายเหตุว่า domestic form of *S. scrofa*; ใช้เป็นหลักในการ resolve nomenclature ของ Draft |
+| SRC-011 | A-contextual | สำนักงานเกษตรและสหกรณ์จังหวัดมุกดาหาร | 2021 | *การเลี้ยงสุกร* | https://www.opsmoac.go.th/mukdahan-dwl-files-432791791838 | เป็นเอกสารราชการไทยที่ให้บริบทการผลิต พันธุ์ และการเลี้ยงสุกร แต่ไม่พบเนื้อหาที่อธิบายอนุกรมวิธาน/ชีววิทยาพื้นฐานของสุกรโดยตรง จึงไม่ใช้ยืนยัน F-001 ถึง F-008 |
+
+### Tier A Thailand search result
+
+**NOT FOUND (direct match):** ค้นเพิ่มเติมจากกรมปศุสัตว์ แหล่งเผยแพร่ของกระทรวงเกษตรฯ และคลังมหาวิทยาลัยไทยแล้ว พบเอกสารไทยที่เกี่ยวกับการผลิต/พันธุ์/การจัดการ แต่ไม่พบ Tier A ของไทยที่ตอบคำถาม “สุกรบ้านคือสัตว์ชนิดใด” ในมิติอนุกรมวิธาน ต้นกำเนิด ระบบย่อยอาหาร และการรู้คิดโดยตรง จึงใช้ SRC-011 เฉพาะเป็น contextual source และใช้ SRC-001–SRC-010 ซึ่งเหมาะสมกว่าในการรองรับข้อเท็จจริงหลัก

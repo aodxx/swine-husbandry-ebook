@@ -2,7 +2,7 @@
 
 ## Current Project State
 
-Foundation setup is initialized from the supplied PRD and Blueprint. Research for topic 1.1 has reached FACTS_EXTRACTED; drafting and approval have not started.
+Foundation setup is initialized from the supplied PRD and Blueprint. Research for topic 1.1 has reached EDITORIAL_REVIEW; approval is intentionally blocked pending owner review and production validation.
 
 | Metric | Count |
 |---|---:|
@@ -20,7 +20,7 @@ Foundation setup is initialized from the supplied PRD and Blueprint. Research fo
 
 - **Current Topic:** `1.1` — หมูคือสัตว์แบบไหน
 - **Next Topic:** `1.2` — ธรรมชาติและพฤติกรรมของหมู
-- **Research status:** `FACTS_EXTRACTED`
+- **Research status:** `EDITORIAL_REVIEW`
 - **Research started:** 2026-08-23
 - **Research date:** 2026-08-22 (foundation preparation only)
 
@@ -33,4 +33,4 @@ Foundation setup is initialized from the supplied PRD and Blueprint. Research fo
 - [x] Farm heritage placeholder preserved
 - [ ] Reader/App implementation
 - [ ] Validation scripts and CI
-- [x] Research questions, source evaluation, fact extraction, and conflict notes for 1.1
+- [x] Research questions, source evaluation, fact extraction, conflict notes, Draft, Fact Check, and Editorial Review for 1.1

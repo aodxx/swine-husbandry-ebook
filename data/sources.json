@@ -126,7 +126,36 @@
         "1.1"
       ],
       "notes": "Discovery and lineage check only; page disclaims authority for nomenclature/classification."
+    },
+    {
+      "id": "SRC-010",
+      "title": "Sus domesticus — Domestic Pig; Sus scrofa — Eurasian Wild Pig",
+      "organization": "American Society of Mammalogists, Mammal Diversity Database v2.5",
+      "url": "https://www.mammaldiversity.org/taxon/1006374/",
+      "publication_date": "2026",
+      "accessed_date": "2026-08-23",
+      "tier": "C-authoritative taxonomy",
+      "language": "en",
+      "topics": [
+        "1.1"
+      ],
+      "notes": "MDD v2.5 lists Sus domesticus as Domestic Pig and notes it as domestic form of S. scrofa; the separate S. scrofa record is Eurasian Wild Pig."
+    },
+    {
+      "id": "SRC-011",
+      "title": "การเลี้ยงสุกร",
+      "organization": "สำนักงานเกษตรและสหกรณ์จังหวัดมุกดาหาร",
+      "url": "https://www.opsmoac.go.th/mukdahan-dwl-files-432791791838",
+      "publication_date": "2021",
+      "accessed_date": "2026-08-23",
+      "tier": "A-contextual",
+      "language": "th",
+      "topics": [
+        "1.1"
+      ],
+      "notes": "Thai government document on production, breeds, and husbandry; not used to establish core taxonomy or physiology claims."
     }
   ],
-  "notes": "Source records are topic-specific and were added after retrieval/evaluation for topic 1.1."
+  "notes": "Source records are topic-specific and were added after retrieval/evaluation for topic 1.1.",
+  "last_updated": "2026-08-23"
 }
