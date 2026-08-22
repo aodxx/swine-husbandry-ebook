@@ -1,4 +1,4 @@
-const CACHE_NAME = 'niphon-farm-reader-v0.1.4'
+const CACHE_NAME = 'niphon-farm-reader-v0.1.5'
 const CORE = ['./', './index.html', './manifest.webmanifest', './icon.svg']
 
 async function cacheBuiltShell(cache) {
@@ -34,7 +34,9 @@ self.addEventListener('install', event => {
 
 self.addEventListener('activate', event => {
   event.waitUntil(
-    caches.keys().then(keys => Promise.all(keys.filter(key => key !== CACHE_NAME).map(key => caches.delete(key)))).then(() => self.clients.claim())
+    caches.keys()
+      .then(keys => Promise.all(keys.filter(key => key !== CACHE_NAME).map(key => caches.delete(key))))
+      .then(() => self.clients.claim())
   )
 })
 
@@ -53,15 +55,33 @@ self.addEventListener('fetch', event => {
   if (request.mode === 'navigate') {
     event.respondWith((async () => {
       try {
-        const response = await fetch(request)
+        const response = await fetch(request, { cache: 'no-store' })
         if (response.ok) {
           const cache = await caches.open(CACHE_NAME)
           await cache.put('./index.html', response.clone())
         }
         return response
       } catch {
-        return (await cachedResponseFor(request)) || (await caches.match('./index.html', { ignoreVary: true }))
+        return (await caches.match('./index.html', { ignoreVary: true })) || Response.error()
       }
+    })())
+    return
+  }
+
+  const isBuildAsset = url.pathname.includes('/assets/')
+  if (isBuildAsset) {
+    event.respondWith((async () => {
+      try {
+        const response = await fetch(request, { cache: 'no-store' })
+        if (response.ok) {
+          const cache = await caches.open(CACHE_NAME)
+          await cache.put(request, response.clone())
+          return response
+        }
+      } catch {
+        // Fall through to cache for offline use.
+      }
+      return (await cachedResponseFor(request)) || Response.error()
     })())
     return
   }
