@@ -1,4 +1,4 @@
-const CACHE_NAME = 'niphon-farm-reader-v0.1'
+const CACHE_NAME = 'niphon-farm-reader-v0.1.1'
 const CORE = ['./', './index.html', './manifest.webmanifest', './icon.svg']
 
 self.addEventListener('install', event => {
