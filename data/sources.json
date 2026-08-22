@@ -1680,6 +1680,62 @@
         "2.10"
       ],
       "notes": "Context-specific; no universal Thai benchmark."
+    },
+    {
+      "id": "SRC-121",
+      "title": "Swine Genetic Evaluation Programs",
+      "organization": "Purdue/NSIF",
+      "url": "https://www.extension.purdue.edu/extmedia/NSIF/NSIF-FS12.html",
+      "publication_date": null,
+      "accessed_date": "2026-08-23",
+      "tier": "C",
+      "language": "en",
+      "topics": [
+        "2.11"
+      ],
+      "notes": "Context-specific; no universal Thai benchmark. Veterinary evaluation requires qualified professional."
+    },
+    {
+      "id": "SRC-122",
+      "title": "Boar Management",
+      "organization": "Merck Veterinary Manual",
+      "url": "https://www.merckvetmanual.com/management-and-nutrition/management-of-reproduction-pigs/boar-management",
+      "publication_date": null,
+      "accessed_date": "2026-08-23",
+      "tier": "C",
+      "language": "en",
+      "topics": [
+        "2.11"
+      ],
+      "notes": "Context-specific; no universal Thai benchmark. Veterinary evaluation requires qualified professional."
+    },
+    {
+      "id": "SRC-123",
+      "title": "Genetic selection of boars",
+      "organization": "PubMed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/18672281/",
+      "publication_date": null,
+      "accessed_date": "2026-08-23",
+      "tier": "C",
+      "language": "en",
+      "topics": [
+        "2.11"
+      ],
+      "notes": "Context-specific; no universal Thai benchmark. Veterinary evaluation requires qualified professional."
+    },
+    {
+      "id": "SRC-124",
+      "title": "Selection Programs for Seedstock Producers",
+      "organization": "Pork Gateway/NSIF",
+      "url": "https://porkgateway.org/resource/selection-programs-for-seedstock-producers/",
+      "publication_date": null,
+      "accessed_date": "2026-08-23",
+      "tier": "D",
+      "language": "en",
+      "topics": [
+        "2.11"
+      ],
+      "notes": "Context-specific; no universal Thai benchmark. Veterinary evaluation requires qualified professional."
     }
   ],
   "notes": "Source records are topic-specific and were added after retrieval/evaluation for topic 1.1.",
