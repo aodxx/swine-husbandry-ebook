@@ -1582,6 +1582,48 @@
         "2.8"
       ],
       "notes": "Context-specific source; no universal Thai benchmark and no individual-animal advice."
+    },
+    {
+      "id": "SRC-114",
+      "title": "Heterosis in pigs",
+      "organization": "Queensland Government",
+      "url": "https://www.business.qld.gov.au/industries/farms-fishing-forestry/agriculture/animal/industries/pigs/breed/genetics/heterosis",
+      "publication_date": null,
+      "accessed_date": "2026-08-23",
+      "tier": "C",
+      "language": "en",
+      "topics": [
+        "2.9"
+      ],
+      "notes": "Official pig-specific explanation of individual, maternal and paternal heterosis; values are context-specific."
+    },
+    {
+      "id": "SRC-115",
+      "title": "Swine Breeding Systems for Alternative Pork Chains",
+      "organization": "Michigan State University",
+      "url": "https://www.canr.msu.edu/resources/swine_breeding_systems_for_alternative_pork_chains_breeding_programs",
+      "publication_date": null,
+      "accessed_date": "2026-08-23",
+      "tier": "C",
+      "language": "en",
+      "topics": [
+        "2.9"
+      ],
+      "notes": "University extension source on terminal, rotational and rota-terminal systems; no Thai benchmark."
+    },
+    {
+      "id": "SRC-116",
+      "title": "Purebred and Crossbred Genomic Evaluation and Mate Allocation Strategies To Exploit Dominance in Pig Crossbreeding Schemes",
+      "organization": "G3: Genes, Genomes, Genetics",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7407463/",
+      "publication_date": null,
+      "accessed_date": "2026-08-23",
+      "tier": "C",
+      "language": "en",
+      "topics": [
+        "2.9"
+      ],
+      "notes": "Peer-reviewed genomic study; simulation and population-specific results."
     }
   ],
   "notes": "Source records are topic-specific and were added after retrieval/evaluation for topic 1.1.",

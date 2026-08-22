@@ -1,0 +1,6 @@
+import json
+p='/home/ubuntu/swine-husbandry-ebook/data/sources.json';d=json.load(open(p));ids={x['id'] for x in d['sources']}
+items=[('SRC-114','Heterosis in pigs','Queensland Government','https://www.business.qld.gov.au/industries/farms-fishing-forestry/agriculture/animal/industries/pigs/breed/genetics/heterosis','Official pig-specific explanation of individual, maternal and paternal heterosis; values are context-specific.'),('SRC-115','Swine Breeding Systems for Alternative Pork Chains','Michigan State University','https://www.canr.msu.edu/resources/swine_breeding_systems_for_alternative_pork_chains_breeding_programs','University extension source on terminal, rotational and rota-terminal systems; no Thai benchmark.'),('SRC-116','Purebred and Crossbred Genomic Evaluation and Mate Allocation Strategies To Exploit Dominance in Pig Crossbreeding Schemes','G3: Genes, Genomes, Genetics','https://pmc.ncbi.nlm.nih.gov/articles/PMC7407463/','Peer-reviewed genomic study; simulation and population-specific results.')]
+for i,t,o,u,n in items:
+ if i not in ids:d['sources'].append({'id':i,'title':t,'organization':o,'url':u,'publication_date':None,'accessed_date':'2026-08-23','tier':'C','language':'en','topics':['2.9'],'notes':n})
+json.dump(d,open(p,'w'),ensure_ascii=False,indent=2);open(p,'a').write('\n')
