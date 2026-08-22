@@ -188,9 +188,9 @@
       "title": "จากพ่อแม่พันธุ์ถึงสุกรตลาด",
       "status": "EDITORIAL_REVIEW",
       "research_started": "2026-08-23",
-      "research_completed": null,
-      "draft_completed": null,
-      "fact_checked": null,
+      "research_completed": "2026-08-23",
+      "draft_completed": "2026-08-23",
+      "fact_checked": "2026-08-23",
       "approved": null,
       "last_reviewed": "2026-08-23",
       "reviewed_by": "Manus AI",
@@ -198,16 +198,17 @@
       "risk_level": "normal",
       "farm_context": false,
       "remaining_questions": [],
-      "notes": "Subtopic Quality Gate passed: scope, research, source evaluation, facts, conflict check, draft, fact check, citation check, editorial self-review, and validation complete."
+      "notes": "Subtopic Quality Gate passed: scope, research, source evaluation, facts, conflict check, draft, fact check, citation check, editorial self-review, and validation complete.",
+      "subtopic_quality_gate": "PASS"
     },
     {
       "id": "1.11",
       "title": "คำศัพท์พื้นฐานที่คนเลี้ยงหมูต้องรู้",
       "status": "EDITORIAL_REVIEW",
       "research_started": "2026-08-23",
-      "research_completed": null,
-      "draft_completed": null,
-      "fact_checked": null,
+      "research_completed": "2026-08-23",
+      "draft_completed": "2026-08-23",
+      "fact_checked": "2026-08-23",
       "approved": null,
       "last_reviewed": "2026-08-23",
       "reviewed_by": "Manus AI",
@@ -215,7 +216,8 @@
       "risk_level": "normal",
       "farm_context": false,
       "remaining_questions": [],
-      "notes": "Subtopic Quality Gate passed. Chapter 1 production is stopped after 1.11; current workflow is FULL CHAPTER QUALITY AUDIT. Do not start any new topic."
+      "notes": "Subtopic Quality Gate passed: scope, research, source evaluation, facts, conflict check, draft, fact check, citation check, editorial self-review, glossary sync, and validation complete.",
+      "subtopic_quality_gate": "PASS"
     },
     {
       "id": "2.1",
