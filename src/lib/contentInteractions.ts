@@ -13,6 +13,21 @@ function escapeRegExp(value: string) {
   return value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
 }
 
+function decorateNumericCitationLinks(doc: Document, root: HTMLElement) {
+  for (const anchor of root.querySelectorAll('a')) {
+    const label = anchor.textContent?.trim() ?? ''
+    if (!/^\d{1,3}$/.test(label)) continue
+
+    const button = doc.createElement('button')
+    button.type = 'button'
+    button.className = 'citation-ref'
+    button.dataset.citationIndex = label
+    button.textContent = `[${label}]`
+    button.setAttribute('aria-label', `เปิดแหล่งอ้างอิง ${label}`)
+    anchor.replaceWith(button)
+  }
+}
+
 export function decorateContentHtml(html: string, terms: GlossaryTerm[]) {
   if (typeof DOMParser === 'undefined') return html
 
@@ -20,6 +35,11 @@ export function decorateContentHtml(html: string, terms: GlossaryTerm[]) {
   const doc = parser.parseFromString(`<div id="reader-content-root">${html}</div>`, 'text/html')
   const root = doc.getElementById('reader-content-root')
   if (!root) return html
+
+  // Markdown citations are commonly authored as numeric links such as [1](url).
+  // Convert those links into local Reader controls so they open the source sheet
+  // instead of navigating the reader away from the book.
+  decorateNumericCitationLinks(doc, root)
 
   const usableTerms = terms
     .flatMap(term => [term.th, term.en].filter(Boolean).map(label => ({ label, id: term.id })))
@@ -67,6 +87,7 @@ export function decorateContentHtml(html: string, terms: GlossaryTerm[]) {
         button.className = 'citation-ref'
         button.dataset.citationIndex = citationNumber
         button.textContent = `[${citationNumber}]`
+        button.setAttribute('aria-label', `เปิดแหล่งอ้างอิง ${citationNumber}`)
         fragment.append(button)
       } else {
         const label = match[0]
