@@ -728,6 +728,62 @@
         "1.7"
       ],
       "notes": "Thai abstract/metadata; contextual experimental evidence in sows, not a universal target."
+    },
+    {
+      "id": "SRC-053",
+      "title": "Introduction to Raising Pigs",
+      "organization": "Pork Information Gateway / University of Minnesota Extension",
+      "url": "https://porkgateway.org/resource/introduction-to-raising-pigs/",
+      "publication_date": "2016",
+      "accessed_date": "2026-08-23",
+      "tier": "C",
+      "language": "en",
+      "topics": [
+        "1.8"
+      ],
+      "notes": "US commercial and small-farm planning factsheet; benchmarks are not universal."
+    },
+    {
+      "id": "SRC-054",
+      "title": "Life Cycle of a Market Pig",
+      "organization": "National Pork Board / Pork Checkoff",
+      "url": "https://porkcheckoff.org/pork-branding/facts-statistics/life-cycle-of-a-market-pig/",
+      "publication_date": "2021",
+      "accessed_date": "2026-08-23",
+      "tier": "D",
+      "language": "en",
+      "topics": [
+        "1.8"
+      ],
+      "notes": "US market-pig life-cycle overview; use for terminology and context, not Thai targets."
+    },
+    {
+      "id": "SRC-055",
+      "title": "Principles of pig production FAQs",
+      "organization": "Agriculture and Horticulture Development Board (AHDB)",
+      "url": "https://ahdb.org.uk/principles-of-pig-production-faqs",
+      "publication_date": "2023",
+      "accessed_date": "2026-08-23",
+      "tier": "D",
+      "language": "en",
+      "topics": [
+        "1.8"
+      ],
+      "notes": "UK producer/veterinary guidance covering breeding, weaning, growing and finishing."
+    },
+    {
+      "id": "SRC-056",
+      "title": "Swine | Small Acreage Landowners",
+      "organization": "University of California Agriculture and Natural Resources",
+      "url": "https://ucanr.edu/site/small-acreage-landowners/swine",
+      "publication_date": "2023",
+      "accessed_date": "2026-08-23",
+      "tier": "C",
+      "language": "en",
+      "topics": [
+        "1.8"
+      ],
+      "notes": "California small-acreage extension page; glossary and production context, not universal benchmarks."
     }
   ],
   "notes": "Source records are topic-specific and were added after retrieval/evaluation for topic 1.1.",

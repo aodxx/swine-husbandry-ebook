@@ -4,19 +4,19 @@ Generated from `data/research-status.json` on 2026-08-23. Do not edit counts man
 
 ## Current Project State
 
-Current Focus is `1.8` — ช่วงชีวิตของสุกร. Topic `1.2` remains locked until topic `1.1` passes the project Quality Gate.
+Current Focus is `1.9` — ระบบการผลิตสุกร. Topic `1.2` remains locked until topic `1.1` passes the project Quality Gate.
 
 ## Current State Count
 
 | Status | Count |
 |---|---:|
-| TODO | 331 |
+| TODO | 330 |
 | RESEARCHING | 0 |
 | SOURCES_COLLECTED | 0 |
 | FACTS_EXTRACTED | 0 |
 | DRAFTED | 0 |
 | FACT_CHECKED | 0 |
-| EDITORIAL_REVIEW | 7 |
+| EDITORIAL_REVIEW | 8 |
 | APPROVED | 0 |
 | PUBLISHED | 0 |
 | BLOCKED | 0 |
@@ -28,16 +28,16 @@ Current Focus is `1.8` — ช่วงชีวิตของสุกร. Top
 
 | Milestone reached | Count |
 |---|---:|
-| Drafted or beyond | 7 |
-| Fact checked or beyond | 7 |
-| Editorial review or beyond | 7 |
+| Drafted or beyond | 8 |
+| Fact checked or beyond | 8 |
+| Editorial review or beyond | 8 |
 | Approved | 0 |
 | Published | 0 |
 
 ## Current Focus
 
-- **Current Topic:** `1.8` — ช่วงชีวิตของสุกร
-- **Next Topic:** `1.9` — ระบบการผลิตสุกร
+- **Current Topic:** `1.9` — ระบบการผลิตสุกร
+- **Next Topic:** `1.10` — จากพ่อแม่พันธุ์ถึงสุกรตลาด
 - **Research status:** `TODO`
 - **Last reviewed:** None
 
