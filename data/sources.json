@@ -1372,6 +1372,90 @@
         "2.5"
       ],
       "notes": "Authoritative curated database for RYR1-related porcine malignant hyperthermia; not a veterinary diagnosis or individual DNA test."
+    },
+    {
+      "id": "SRC-099",
+      "title": "Hampshire Swine",
+      "organization": "Oklahoma State University, Breeds of Livestock",
+      "url": "https://breeds.okstate.edu/swine/hampshire-swine",
+      "publication_date": null,
+      "accessed_date": "2026-08-23",
+      "tier": "C",
+      "language": "en",
+      "topics": [
+        "2.6"
+      ],
+      "notes": "Hampshire history and breed description."
+    },
+    {
+      "id": "SRC-100",
+      "title": "Berkshire Swine",
+      "organization": "Oklahoma State University, Breeds of Livestock",
+      "url": "https://breeds.okstate.edu/swine/berkshire-swine",
+      "publication_date": null,
+      "accessed_date": "2026-08-23",
+      "tier": "C",
+      "language": "en",
+      "topics": [
+        "2.6"
+      ],
+      "notes": "Berkshire history and breed description."
+    },
+    {
+      "id": "SRC-101",
+      "title": "Tamworth Swine",
+      "organization": "Oklahoma State University, Breeds of Livestock",
+      "url": "https://breeds.okstate.edu/swine/tamworth-swine",
+      "publication_date": null,
+      "accessed_date": "2026-08-23",
+      "tier": "C",
+      "language": "en",
+      "topics": [
+        "2.6"
+      ],
+      "notes": "Tamworth history and phenotype description."
+    },
+    {
+      "id": "SRC-102",
+      "title": "Meishan Swine",
+      "organization": "Oklahoma State University, Breeds of Livestock",
+      "url": "https://breeds.okstate.edu/swine/meishan-swine",
+      "publication_date": null,
+      "accessed_date": "2026-08-23",
+      "tier": "C",
+      "language": "en",
+      "topics": [
+        "2.6"
+      ],
+      "notes": "Meishan origin and description; no numeric claims used."
+    },
+    {
+      "id": "SRC-103",
+      "title": "Genetic diversity analysis of Thai indigenous pig population using microsatellite markers",
+      "organization": "Asian-Australasian Journal of Animal Sciences",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6718910/",
+      "publication_date": null,
+      "accessed_date": "2026-08-23",
+      "tier": "C",
+      "language": "en",
+      "topics": [
+        "2.6"
+      ],
+      "notes": "Peer-reviewed Thai population study; results depend on sample and markers."
+    },
+    {
+      "id": "SRC-104",
+      "title": "Genetic Divergence of Thai Indigenous Pigs from Three Distinct Geographic Regions Revealed by Microsatellite Marker Analysis",
+      "organization": "Animals / MDPI",
+      "url": "https://www.mdpi.com/2076-2615/13/4/625",
+      "publication_date": null,
+      "accessed_date": "2026-08-23",
+      "tier": "C",
+      "language": "en",
+      "topics": [
+        "2.6"
+      ],
+      "notes": "Peer-reviewed Thai indigenous population study; not a universal phenotype or performance target."
     }
   ],
   "notes": "Source records are topic-specific and were added after retrieval/evaluation for topic 1.1.",
