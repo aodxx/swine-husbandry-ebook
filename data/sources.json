@@ -1848,6 +1848,62 @@
         "2.13"
       ],
       "notes": "International welfare framework; no numeric farm benchmark used."
+    },
+    {
+      "id": "SRC-133",
+      "title": "Genetic parameters for carcass composition and pork quality traits in two pig populations",
+      "organization": "Journal of Animal Science / PubMed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/15644503/",
+      "publication_date": "2005",
+      "accessed_date": "2026-08-23",
+      "tier": "C",
+      "language": "en",
+      "topics": [
+        "2.14"
+      ],
+      "notes": "Peer-reviewed study; estimates are population- and protocol-specific."
+    },
+    {
+      "id": "SRC-134",
+      "title": "Estimation of Genetic Parameters for Pork Quality, Novel Carcass, Primal-Cut and Growth Traits in Duroc Pigs",
+      "organization": "Animals / MDPI",
+      "url": "https://www.mdpi.com/2076-2615/10/5/779",
+      "publication_date": "2020",
+      "accessed_date": "2026-08-23",
+      "tier": "C",
+      "language": "en",
+      "topics": [
+        "2.14"
+      ],
+      "notes": "Peer-reviewed Duroc population study; no universal Thai targets."
+    },
+    {
+      "id": "SRC-135",
+      "title": "Genetic Improvement of Meat Quality Traits in Pigs",
+      "organization": "Iowa State University Pork Industry Center",
+      "url": "https://www.ipic.iastate.edu/genetic-improvement-meat-quality-traits-pigs",
+      "publication_date": null,
+      "accessed_date": "2026-08-23",
+      "tier": "A",
+      "language": "en",
+      "topics": [
+        "2.14"
+      ],
+      "notes": "University technical summary on real-time ultrasound and IMF selection."
+    },
+    {
+      "id": "SRC-136",
+      "title": "Pork Quality and Genetic Selection",
+      "organization": "North Carolina State University / Pork Gateway",
+      "url": "https://porkgateway.org/resource/pork-quality-and-genetic-selection/",
+      "publication_date": null,
+      "accessed_date": "2026-08-23",
+      "tier": "D",
+      "language": "en",
+      "topics": [
+        "2.14"
+      ],
+      "notes": "Technical reference on economic objectives and measurement constraints."
     }
   ],
   "notes": "Source records are topic-specific and were added after retrieval/evaluation for topic 1.1.",
