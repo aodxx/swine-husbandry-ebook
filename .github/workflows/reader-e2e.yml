@@ -1,0 +1,59 @@
+name: Reader E2E QA
+
+on:
+  pull_request:
+    paths:
+      - 'src/**'
+      - 'public/**'
+      - 'content/**'
+      - 'data/toc.json'
+      - 'data/glossary.json'
+      - 'data/sources.json'
+      - 'index.html'
+      - 'package.json'
+      - 'playwright.config.ts'
+      - 'tests/e2e/**'
+      - 'vite.config.ts'
+      - '.github/workflows/reader-e2e.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'src/**'
+      - 'public/**'
+      - 'content/**'
+      - 'data/toc.json'
+      - 'data/glossary.json'
+      - 'data/sources.json'
+      - 'index.html'
+      - 'package.json'
+      - 'playwright.config.ts'
+      - 'tests/e2e/**'
+      - 'vite.config.ts'
+      - '.github/workflows/reader-e2e.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  e2e:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install dependencies
+        run: npm install --no-audit --no-fund
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+      - name: Build Reader
+        run: npm run build
+      - name: Run mobile E2E QA
+        run: npm run test:e2e
+      - name: Upload Playwright report on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-report
+          path: playwright-report/
+          if-no-files-found: ignore
