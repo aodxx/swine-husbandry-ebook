@@ -4,19 +4,19 @@ Generated from `data/research-status.json` on 2026-08-23. Do not edit counts man
 
 ## Current Project State
 
-Current Focus is `1.10` — จากพ่อแม่พันธุ์ถึงสุกรตลาด. Topic `1.2` remains locked until topic `1.1` passes the project Quality Gate.
+Current Focus is `1.11` — คำศัพท์พื้นฐานที่คนเลี้ยงหมูต้องรู้. Topic `1.2` remains locked until topic `1.1` passes the project Quality Gate.
 
 ## Current State Count
 
 | Status | Count |
 |---|---:|
-| TODO | 329 |
+| TODO | 328 |
 | RESEARCHING | 0 |
 | SOURCES_COLLECTED | 0 |
 | FACTS_EXTRACTED | 0 |
 | DRAFTED | 0 |
 | FACT_CHECKED | 0 |
-| EDITORIAL_REVIEW | 9 |
+| EDITORIAL_REVIEW | 10 |
 | APPROVED | 0 |
 | PUBLISHED | 0 |
 | BLOCKED | 0 |
@@ -28,15 +28,15 @@ Current Focus is `1.10` — จากพ่อแม่พันธุ์ถึ�
 
 | Milestone reached | Count |
 |---|---:|
-| Drafted or beyond | 9 |
-| Fact checked or beyond | 9 |
-| Editorial review or beyond | 9 |
+| Drafted or beyond | 10 |
+| Fact checked or beyond | 10 |
+| Editorial review or beyond | 10 |
 | Approved | 0 |
 | Published | 0 |
 
 ## Current Focus
 
-- **Current Topic:** `1.10` — จากพ่อแม่พันธุ์ถึงสุกรตลาด
+- **Current Topic:** `1.11` — คำศัพท์พื้นฐานที่คนเลี้ยงหมูต้องรู้
 - **Next Topic:** `1.11` — คำศัพท์พื้นฐานที่คนเลี้ยงหมูต้องรู้
 - **Research status:** `TODO`
 - **Last reviewed:** None
