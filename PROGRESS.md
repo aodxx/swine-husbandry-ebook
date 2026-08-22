@@ -4,19 +4,19 @@ Generated from `data/research-status.json` on 2026-08-23. Do not edit counts man
 
 ## Current Project State
 
-Chapter 1 status: `OWNER_REVIEW_PASSED`. Current Focus is `2.2` — Large White / Yorkshire. Next Topic is `2.3` — Landrace; `CHAPTER_2_CONTENT_PRODUCTION`.
+Chapter 1 status: `OWNER_REVIEW_PASSED`. Current Focus is `2.3` — Landrace. Next Topic is `2.4` — Duroc; `CHAPTER_2_CONTENT_PRODUCTION`.
 
 ## Current State Count
 
 | Status | Count |
 |---|---:|
-| TODO | 325 |
+| TODO | 324 |
 | RESEARCHING | 0 |
 | SOURCES_COLLECTED | 0 |
 | FACTS_EXTRACTED | 0 |
 | DRAFTED | 0 |
 | FACT_CHECKED | 0 |
-| EDITORIAL_REVIEW | 13 |
+| EDITORIAL_REVIEW | 14 |
 | APPROVED | 0 |
 | PUBLISHED | 0 |
 | BLOCKED | 0 |
@@ -28,16 +28,16 @@ Chapter 1 status: `OWNER_REVIEW_PASSED`. Current Focus is `2.2` — Large White 
 
 | Milestone reached | Count |
 |---|---:|
-| Drafted or beyond | 13 |
-| Fact checked or beyond | 13 |
-| Editorial review or beyond | 13 |
+| Drafted or beyond | 14 |
+| Fact checked or beyond | 14 |
+| Editorial review or beyond | 14 |
 | Approved | 0 |
 | Published | 0 |
 
 ## Current Focus
 
-- **Current Topic:** `2.2` — Large White / Yorkshire
-- **Next Topic:** `2.3` — Landrace
+- **Current Topic:** `2.3` — Landrace
+- **Next Topic:** `2.4` — Duroc
 - **Next Topic Gate:** `CHAPTER_2_CONTENT_PRODUCTION`
 - **Research status:** `EDITORIAL_REVIEW`
 - **Last reviewed:** 2026-08-23
