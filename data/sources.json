@@ -490,6 +490,118 @@
         "1.5"
       ],
       "notes": "Thai academic experiment on aggression after regrouping in evaporative cooling house; contextual only, no universal numeric target."
+    },
+    {
+      "id": "SRC-036",
+      "title": "Causes, consequences and biomarkers of stress in swine: an update",
+      "organization": "BMC Veterinary Research / Martínez-Miró et al.",
+      "url": "https://link.springer.com/article/10.1186/s12917-016-0791-8",
+      "publication_date": "2016",
+      "accessed_date": "2026-08-23",
+      "tier": "C",
+      "language": "en",
+      "topics": [
+        "1.6"
+      ],
+      "notes": "Review of multifactorial stress, physiological systems and biomarkers."
+    },
+    {
+      "id": "SRC-037",
+      "title": "Stress Biomarkers in Pigs: Current Insights and Clinical Application",
+      "organization": "Veterinary Sciences / Papatsiros et al.",
+      "url": "https://www.mdpi.com/2306-7381/11/12/640",
+      "publication_date": "2024",
+      "accessed_date": "2026-08-23",
+      "tier": "C",
+      "language": "en",
+      "topics": [
+        "1.6"
+      ],
+      "notes": "Review of stressors, acute/chronic social stress and biomarker limitations; use only extracted details."
+    },
+    {
+      "id": "SRC-038",
+      "title": "Systematic review of animal-based indicators to measure thermal, social, and immune-related stress in pigs",
+      "organization": "PLOS ONE / Guevara et al.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9070874/",
+      "publication_date": "2022",
+      "accessed_date": "2026-08-23",
+      "tier": "C",
+      "language": "en",
+      "topics": [
+        "1.6"
+      ],
+      "notes": "Systematic review; page access partly protected, so no inaccessible methods/effect sizes cited."
+    },
+    {
+      "id": "SRC-039",
+      "title": "Animal welfare and pig production systems, Terrestrial Animal Health Code Chapter 7.13",
+      "organization": "WOAH",
+      "url": "https://www.woah.org/fileadmin/Home/eng/Health_standards/tahc/2024/en_chapitre_aw_pigs.htm",
+      "publication_date": "2024",
+      "accessed_date": "2026-08-23",
+      "tier": "B",
+      "language": "en",
+      "topics": [
+        "1.6"
+      ],
+      "notes": "International welfare standard with animal-based criteria and handling recommendations."
+    },
+    {
+      "id": "SRC-040",
+      "title": "Behavior of Swine",
+      "organization": "Merck Veterinary Manual",
+      "url": "https://www.merckvetmanual.com/behavior/behavior-of-production-animals/behavior-of-swine",
+      "publication_date": "2025",
+      "accessed_date": "2026-08-23",
+      "tier": "C",
+      "language": "en",
+      "topics": [
+        "1.6"
+      ],
+      "notes": "Veterinary reference used for behaviour/welfare context."
+    },
+    {
+      "id": "SRC-041",
+      "title": "Welfare of pigs during transport",
+      "organization": "Animals / Nielsen et al.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9449989/",
+      "publication_date": "2022",
+      "accessed_date": "2026-08-23",
+      "tier": "C",
+      "language": "en",
+      "topics": [
+        "1.6"
+      ],
+      "notes": "Review limited to transport welfare and handling stressors."
+    },
+    {
+      "id": "SRC-042",
+      "title": "ระเบียบกรมปศุสัตว์ ว่าด้วยการคุ้มครองและดูแลสวัสดิภาพสุกร",
+      "organization": "กรมปศุสัตว์",
+      "url": "https://certify.dld.go.th/images/animal%20welfare/law-animal/3awr.pdf",
+      "publication_date": "unknown",
+      "accessed_date": "2026-08-23",
+      "tier": "A",
+      "language": "th",
+      "topics": [
+        "1.6"
+      ],
+      "notes": "Scanned PDF; relevant government record but details not text-verifiable, so not used for detailed claims."
+    },
+    {
+      "id": "SRC-043",
+      "title": "อิทธิพลของคอกขังเดี่ยวต่อภาวะความเครียดในสุกรสาว",
+      "organization": "มหาวิทยาลัยเกษตรศาสตร์ / ขมเจริญ และ ชาครีย์รัตน์",
+      "url": "https://kukr.lib.ku.ac.th/covid19/Detail/info/6590",
+      "publication_date": "1998",
+      "accessed_date": "2026-08-23",
+      "tier": "A",
+      "language": "th",
+      "topics": [
+        "1.6"
+      ],
+      "notes": "Abstract/metadata only; contextual source on gilts and individual pen size."
     }
   ],
   "notes": "Source records are topic-specific and were added after retrieval/evaluation for topic 1.1.",

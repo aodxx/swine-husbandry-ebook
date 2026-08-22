@@ -4,19 +4,19 @@ Generated from `data/research-status.json` on 2026-08-23. Do not edit counts man
 
 ## Current Project State
 
-Current Focus is `1.6` — ความเครียดของหมู. Topic `1.2` remains locked until topic `1.1` passes the project Quality Gate.
+Current Focus is `1.7` — หมูกับอุณหภูมิ. Topic `1.2` remains locked until topic `1.1` passes the project Quality Gate.
 
 ## Current State Count
 
 | Status | Count |
 |---|---:|
-| TODO | 333 |
+| TODO | 332 |
 | RESEARCHING | 0 |
 | SOURCES_COLLECTED | 0 |
 | FACTS_EXTRACTED | 0 |
 | DRAFTED | 0 |
 | FACT_CHECKED | 0 |
-| EDITORIAL_REVIEW | 5 |
+| EDITORIAL_REVIEW | 6 |
 | APPROVED | 0 |
 | PUBLISHED | 0 |
 | BLOCKED | 0 |
@@ -28,16 +28,16 @@ Current Focus is `1.6` — ความเครียดของหมู. Top
 
 | Milestone reached | Count |
 |---|---:|
-| Drafted or beyond | 5 |
-| Fact checked or beyond | 5 |
-| Editorial review or beyond | 5 |
+| Drafted or beyond | 6 |
+| Fact checked or beyond | 6 |
+| Editorial review or beyond | 6 |
 | Approved | 0 |
 | Published | 0 |
 
 ## Current Focus
 
-- **Current Topic:** `1.6` — ความเครียดของหมู
-- **Next Topic:** `1.7` — หมูกับอุณหภูมิ
+- **Current Topic:** `1.7` — หมูกับอุณหภูมิ
+- **Next Topic:** `1.8` — ช่วงชีวิตของสุกร
 - **Research status:** `TODO`
 - **Last reviewed:** None
 
