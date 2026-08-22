@@ -6,13 +6,15 @@
 1. `READER_BLUEPRINT.md` — สถาปัตยกรรมและขอบเขตระบบ
 2. `EBOOK_UX_SPEC.md` — พฤติกรรม UX บนมือถือและสองโหมดอ่าน
 3. `DESIGN_DIRECTION.md` — Visual identity, cover, typography, motion, sound
-4. `PROTOTYPE_VISUAL_REVIEW.md` — ภาพ reference ที่อนุมัติให้ใช้เป็นแนวทาง
+4. `PROTOTYPE_VISUAL_REVIEW.md` — วิธีใช้ภาพ reference
 
-## ภาพ Reference หลัก
-- `assets/cover-concept-a.png`
-- `assets/cover-concept-b.png`
-- `assets/mobile-reader-wireframe.png`
-- `assets/book-vs-reading-mode.png`
+## Visual Reference ใน Repository
+- `assets/cover-concept-a.svg`
+- `assets/cover-concept-b.svg`
+- `assets/mobile-reader-wireframe.svg`
+- `assets/book-vs-reading-mode.svg`
+
+ไฟล์ SVG ชุดนี้เป็น developer reference ที่เปิดได้โดยตรงจาก GitHub และใช้แทนภาพ concept render ในขั้นพัฒนาโครงแรก ตัวภาพ render ที่สร้างจาก AI ก่อนหน้าเป็น mood reference เท่านั้น ไม่ใช่ production asset
 
 ## กฎสำหรับการพัฒนา
 - Mobile-first
@@ -21,7 +23,7 @@
 - ห้าม hard-code เนื้อหาวิชาการใน UI
 - เนื้อหาต้องโหลดจาก `content/` และ metadata ของโปรเจกต์
 - ห้ามแต่งประวัตินิพนธ์ฟาร์มเพื่อเติม UI; ใช้ placeholder จนมีหลักฐานจริง
-- ภาพ reference เป็นแนวคิด ไม่ใช่ asset production final; ตัวอักษร/ข้อความในภาพ AI อาจผิด ต้องใช้ข้อความจริงจากระบบตอน implement
+- ห้ามคัดลอกข้อความย่อยจากภาพ AI; implementation ต้องใช้ข้อความจริงจาก content/UX spec
 - ต้องรองรับ reduced motion, offline/PWA, bookmark, resume, search, typography controls, light/sepia/dark
 
 ## Prototype v0.1 Target

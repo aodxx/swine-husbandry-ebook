@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1132" viewBox="0 0 800 1132">
+<rect width="800" height="1132" fill="#efe4cb"/><rect x="0" y="0" width="42" height="1132" fill="#5e4a34"/>
+<g stroke="#d6c5a3" stroke-width="1"><line x1="70" y1="120" x2="740" y2="120"/><line x1="70" y1="160" x2="740" y2="160"/></g>
+<text x="410" y="270" text-anchor="middle" font-size="54" fill="#25352a" font-family="sans-serif">ตำรา นิพนธ์ฟาร์ม</text>
+<text x="410" y="330" text-anchor="middle" font-size="29" fill="#536546" font-family="sans-serif">ศาสตร์และวิถีการเลี้ยงสุกร</text>
+<text x="410" y="380" text-anchor="middle" font-size="19" fill="#735c42" font-family="sans-serif">บันทึกองค์ความรู้จากรุ่นสู่รุ่น</text>
+<rect x="100" y="470" width="620" height="360" rx="10" fill="none" stroke="#967e5d" stroke-width="2" stroke-dasharray="8 8"/>
+<text x="410" y="635" text-anchor="middle" font-size="32" fill="#605f50" font-family="sans-serif">ภาพวาดสุกรเชิงวิชาการ</text><text x="410" y="680" text-anchor="middle" font-size="19" fill="#7a6e5a" font-family="sans-serif">Farm Notebook / Field Manual Direction</text>
+<text x="410" y="920" text-anchor="middle" font-size="22" fill="#4f6746" font-family="sans-serif">ความรู้ที่บันทึกไว้ คืออนาคตของฟาร์มเรา</text>
+</svg>
