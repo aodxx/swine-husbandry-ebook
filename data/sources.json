@@ -784,6 +784,104 @@
         "1.8"
       ],
       "notes": "California small-acreage extension page; glossary and production context, not universal benchmarks."
+    },
+    {
+      "id": "SRC-057",
+      "title": "Swine Production",
+      "organization": "Penn State Extension",
+      "url": "https://extension.psu.edu/swine-production",
+      "publication_date": "2005",
+      "accessed_date": "2026-08-23",
+      "tier": "A",
+      "language": "en",
+      "topics": [
+        "1.9"
+      ],
+      "notes": "Defines farrow-to-finish, farrow-to-feeder and feeder-to-finish; US extension context."
+    },
+    {
+      "id": "SRC-058",
+      "title": "Hogs and Pork: Sector at a Glance",
+      "organization": "USDA Economic Research Service",
+      "url": "https://www.ers.usda.gov/topics/animal-products/hogs-pork/sector-at-a-glance",
+      "publication_date": "2025",
+      "accessed_date": "2026-08-23",
+      "tier": "A",
+      "language": "en",
+      "topics": [
+        "1.9"
+      ],
+      "notes": "US government overview of specialized hog enterprises and industry structure."
+    },
+    {
+      "id": "SRC-059",
+      "title": "Animal welfare and pig production systems, Terrestrial Animal Health Code Chapter 7.13",
+      "organization": "WOAH",
+      "url": "https://www.woah.org/fileadmin/Home/eng/Health_standards/tahc/2018/en_chapitre_aw_pigs.htm",
+      "publication_date": "2018",
+      "accessed_date": "2026-08-23",
+      "tier": "B",
+      "language": "en",
+      "topics": [
+        "1.9"
+      ],
+      "notes": "Defines indoor, outdoor and combination commercial pig production systems."
+    },
+    {
+      "id": "SRC-060",
+      "title": "A critical reflection on intensive pork production with an emphasis on animal health and welfare",
+      "organization": "Journal of Animal Science / Maes et al.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7433918/",
+      "publication_date": "2020",
+      "accessed_date": "2026-08-23",
+      "tier": "C",
+      "language": "en",
+      "topics": [
+        "1.9"
+      ],
+      "notes": "Academic review of intensive/confinement production and health/welfare trade-offs."
+    },
+    {
+      "id": "SRC-061",
+      "title": "Multi-site pig production",
+      "organization": "DL Harris",
+      "url": "https://books.google.com/books?id=xEXw23repU4C",
+      "publication_date": "2008",
+      "accessed_date": "2026-08-23",
+      "tier": "C",
+      "language": "en",
+      "topics": [
+        "1.9"
+      ],
+      "notes": "Book metadata and accessible description of multi-site production; no inaccessible details used."
+    },
+    {
+      "id": "SRC-062",
+      "title": "การลดความเครียดจากความร้อนในแม่สุกรระยะอุ้มท้อง ถึงระยะเลี้ยงลูกด้วยน้ำหยดในช่วงฤดูร้อน",
+      "organization": "มหาวิทยาลัยเกษตรศาสตร์",
+      "url": "https://kukr.lib.ku.ac.th/kukr/Detail/info/6827",
+      "publication_date": "1999",
+      "accessed_date": "2026-08-23",
+      "tier": "A",
+      "language": "th",
+      "topics": [
+        "1.9"
+      ],
+      "notes": "Thai sow heat-stress study; contextual only, not production-system taxonomy."
+    },
+    {
+      "id": "SRC-063",
+      "title": "ผลการค้นเอกสารไทยด้าน taxonomy ระบบการผลิตสุกร",
+      "organization": "กรมปศุสัตว์/มหาวิทยาลัยไทย",
+      "url": "https://www.dld.go.th/",
+      "publication_date": "2026",
+      "accessed_date": "2026-08-23",
+      "tier": "A",
+      "language": "th",
+      "topics": [
+        "1.9"
+      ],
+      "notes": "NOT FOUND record: no directly accessible Thai Tier A taxonomy source located in this round."
     }
   ],
   "notes": "Source records are topic-specific and were added after retrieval/evaluation for topic 1.1.",
