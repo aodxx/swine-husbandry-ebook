@@ -4,19 +4,19 @@ Generated from `data/research-status.json` on 2026-08-23. Do not edit counts man
 
 ## Current Project State
 
-Current Focus is `1.3` — การมองเห็น การได้ยิน และการดมกลิ่น. Topic `1.2` remains locked until topic `1.1` passes the project Quality Gate.
+Current Focus is `1.4` — พฤติกรรมการกิน. Topic `1.2` remains locked until topic `1.1` passes the project Quality Gate.
 
 ## Current State Count
 
 | Status | Count |
 |---|---:|
-| TODO | 336 |
+| TODO | 335 |
 | RESEARCHING | 0 |
 | SOURCES_COLLECTED | 0 |
 | FACTS_EXTRACTED | 0 |
 | DRAFTED | 0 |
 | FACT_CHECKED | 0 |
-| EDITORIAL_REVIEW | 2 |
+| EDITORIAL_REVIEW | 3 |
 | APPROVED | 0 |
 | PUBLISHED | 0 |
 | BLOCKED | 0 |
@@ -28,16 +28,16 @@ Current Focus is `1.3` — การมองเห็น การได้ย�
 
 | Milestone reached | Count |
 |---|---:|
-| Drafted or beyond | 2 |
-| Fact checked or beyond | 2 |
-| Editorial review or beyond | 2 |
+| Drafted or beyond | 3 |
+| Fact checked or beyond | 3 |
+| Editorial review or beyond | 3 |
 | Approved | 0 |
 | Published | 0 |
 
 ## Current Focus
 
-- **Current Topic:** `1.3` — การมองเห็น การได้ยิน และการดมกลิ่น
-- **Next Topic:** `1.4` — พฤติกรรมการกิน
+- **Current Topic:** `1.4` — พฤติกรรมการกิน
+- **Next Topic:** `1.5` — พฤติกรรมทางสังคม
 - **Research status:** `TODO`
 - **Last reviewed:** None
 

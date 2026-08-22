@@ -238,6 +238,90 @@
         "1.2"
       ],
       "notes": "Thai government PDF discovered but browser extraction returned encoded stream; not used as evidence until readable text is verified."
+    },
+    {
+      "id": "SRC-018",
+      "title": "Toward a better understanding of pig behavior and pig welfare",
+      "organization": "Animal Health Research Reviews / Kittawornrat & Zimmerman",
+      "url": "https://www.cambridge.org/core/journals/animal-health-research-reviews/article/toward-a-better-understanding-of-pig-behavior-and-pig-welfare/CCE62247E737F0E146C84B6250C5F780",
+      "publication_date": "2011",
+      "accessed_date": "2026-08-23",
+      "tier": "C",
+      "language": "en",
+      "topics": [
+        "1.3"
+      ],
+      "notes": "Review; abstract/metadata accessible for sensory overview. Do not use inaccessible sensory threshold details."
+    },
+    {
+      "id": "SRC-019",
+      "title": "Pig olfaction: the potential impact and use of odors in commercial pig husbandry",
+      "organization": "Frontiers in Animal Science / Schild & Rørvang",
+      "url": "https://www.frontiersin.org/journals/animal-science/articles/10.3389/fanim.2023.1215206/full",
+      "publication_date": "2023",
+      "accessed_date": "2026-08-23",
+      "tier": "C",
+      "language": "en",
+      "topics": [
+        "1.3"
+      ],
+      "notes": "Open review on pig olfaction, odor environment, exploration and knowledge gaps."
+    },
+    {
+      "id": "SRC-020",
+      "title": "Perception of environment in farm animals — A review",
+      "organization": "Annals of Animal Science / Adamczyk et al.",
+      "url": "https://reference-global.com/article/10.1515/aoas-2015-0031",
+      "publication_date": "2015",
+      "accessed_date": "2026-08-23",
+      "tier": "C",
+      "language": "en",
+      "topics": [
+        "1.3"
+      ],
+      "notes": "Cross-species review used as conceptual framework for sensory perception; not sole evidence for pig-specific claims."
+    },
+    {
+      "id": "SRC-021",
+      "title": "Visual acuity of pigs at different light intensities",
+      "organization": "Applied Animal Behaviour Science / Zonderland et al.",
+      "url": "https://research.wur.nl/en/publications/af7cd411-c0cd-41bd-9905-8465b85d9cbc",
+      "publication_date": "2008",
+      "accessed_date": "2026-08-23",
+      "tier": "C",
+      "language": "en",
+      "topics": [
+        "1.3"
+      ],
+      "notes": "Primary study on illumination and visual cue size in 4-month-old pigs; do not generalize numeric results as farm standards."
+    },
+    {
+      "id": "SRC-022",
+      "title": "Hearing in domestic pigs (Sus scrofa) and goats (Capra hircus)",
+      "organization": "Hearing Research / Heffner & Heffner",
+      "url": "https://www.sciencedirect.com/science/article/pii/037859559090063U",
+      "publication_date": "1990",
+      "accessed_date": "2026-08-23",
+      "tier": "C",
+      "language": "en",
+      "topics": [
+        "1.3"
+      ],
+      "notes": "Primary auditory capacity study; accessible page provides limited result detail, so no numeric range used in Draft."
+    },
+    {
+      "id": "SRC-023",
+      "title": "The p-ERG spatial acuity in the biomedical pig under physiological conditions",
+      "organization": "Scientific Reports / Ventrella et al.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9474814/",
+      "publication_date": "2022",
+      "accessed_date": "2026-08-23",
+      "tier": "C",
+      "language": "en",
+      "topics": [
+        "1.3"
+      ],
+      "notes": "Primary biomedical visual physiology study; not used for general farm management claims."
     }
   ],
   "notes": "Source records are topic-specific and were added after retrieval/evaluation for topic 1.1.",
