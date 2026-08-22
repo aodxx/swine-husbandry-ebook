@@ -2,8 +2,8 @@
   "schema_version": "1.0",
   "project": "swine-husbandry-ebook",
   "last_updated": "2026-08-23",
-  "current_focus": "3.1",
-  "next_topic": "3.1",
+  "current_focus": "3.2",
+  "next_topic": "3.2",
   "allowed_statuses": [
     "TODO",
     "RESEARCHING",
@@ -522,19 +522,22 @@
     {
       "id": "3.1",
       "title": "ประเมินความพร้อมก่อนเลี้ยง",
-      "status": "TODO",
-      "research_started": null,
-      "research_completed": null,
-      "draft_completed": null,
-      "fact_checked": null,
+      "status": "EDITORIAL_REVIEW",
+      "research_started": "2026-08-23",
+      "research_completed": "2026-08-23",
+      "draft_completed": "2026-08-23",
+      "fact_checked": "2026-08-23",
       "approved": null,
-      "last_reviewed": null,
-      "reviewed_by": null,
-      "source_count": 0,
-      "risk_level": "normal",
+      "last_reviewed": "2026-08-23",
+      "reviewed_by": "Manus AI",
+      "source_count": 4,
+      "risk_level": "high",
       "farm_context": false,
-      "remaining_questions": [],
-      "notes": "Foundation initialized; research not started."
+      "remaining_questions": [
+        "ต้องตรวจข้อกำหนดท้องถิ่นและกฎหมายสิ่งแวดล้อมฉบับปัจจุบันตามที่ตั้งจริงก่อนลงทุน"
+      ],
+      "notes": "Foundation initialized; research not started.",
+      "subtopic_quality_gate": "PASS"
     },
     {
       "id": "3.2",
@@ -5824,7 +5827,7 @@
       "notes": "Foundation initialized; research not started."
     }
   ],
-  "workflow_state": "CHAPTER_2_CLOSED_CHAPTER_3_LOCKED",
+  "workflow_state": "CHAPTER_3_CONTENT_PRODUCTION",
   "chapter_closures": {
     "1": {
       "status": "OWNER_REVIEW_PASSED",
@@ -5885,8 +5888,20 @@
     "one_subtopic_at_a_time": true,
     "golden_chapter_reference": "1",
     "stop_after": "2.15",
-    "do_not_start_chapter_3": true,
-    "next_topic_locked": true,
+    "do_not_start_chapter_3": false,
+    "next_topic_locked": false,
     "audit_report": "docs/audits/chapter-02-full-audit.md"
+  },
+  "chapter_3_production": {
+    "status": "IN_PROGRESS",
+    "current_topic": "3.2",
+    "next_topic": "3.2",
+    "one_subtopic_at_a_time": true,
+    "golden_chapter_reference": "1",
+    "golden_chapter_2_reference": "2",
+    "stop_after": "3.12",
+    "do_not_start_chapter_4": true,
+    "legal_dynamic_review_required": true,
+    "cost_claim_policy": "EXAMPLE_ONLY unless current Thai source is verified"
   }
 }
