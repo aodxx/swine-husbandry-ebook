@@ -322,6 +322,90 @@
         "1.3"
       ],
       "notes": "Primary biomedical visual physiology study; not used for general farm management claims."
+    },
+    {
+      "id": "SRC-024",
+      "title": "Feeding Behaviour in Group-Housed Growing-Finishing Pigs and Its Relationship with Growth and Feed Efficiency",
+      "organization": "Veterinary Sciences / Piles et al.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11860942/",
+      "publication_date": "2025",
+      "accessed_date": "2026-08-23",
+      "tier": "C",
+      "language": "en",
+      "topics": [
+        "1.4"
+      ],
+      "notes": "Primary open study; automatic feeder and group-housed fattening pigs; no farm-wide numeric standards."
+    },
+    {
+      "id": "SRC-025",
+      "title": "The Feeding Behaviour Habits of Growing-Finishing Pigs and Its Effects on Growth Performance and Carcass Quality: A Review",
+      "organization": "Animals / Fornós et al.",
+      "url": "https://www.mdpi.com/2076-2615/12/9/1128",
+      "publication_date": "2022",
+      "accessed_date": "2026-08-23",
+      "tier": "C",
+      "language": "en",
+      "topics": [
+        "1.4"
+      ],
+      "notes": "Review of feeding-behaviour metrics and contextual variability; meal definitions differ."
+    },
+    {
+      "id": "SRC-026",
+      "title": "Effects of flavour variety on the intake and palatability of feed in nursery pigs",
+      "organization": "Frontiers in Veterinary Science / Huenul et al.",
+      "url": "https://www.frontiersin.org/journals/veterinary-science/articles/10.3389/fvets.2023.1218198/full",
+      "publication_date": "2023",
+      "accessed_date": "2026-08-23",
+      "tier": "C",
+      "language": "en",
+      "topics": [
+        "1.4"
+      ],
+      "notes": "Primary nursery-pig flavour-variety experiment; not a universal flavour-additive recommendation."
+    },
+    {
+      "id": "SRC-027",
+      "title": "Feeding Levels and Practices in Pigs",
+      "organization": "Merck Veterinary Manual",
+      "url": "https://www.merckvetmanual.com/management-and-nutrition/nutrition-pigs/feeding-levels-and-practices-in-pigs",
+      "publication_date": "2025",
+      "accessed_date": "2026-08-23",
+      "tier": "C",
+      "language": "en",
+      "topics": [
+        "1.4"
+      ],
+      "notes": "Veterinary reference; only behaviour/management factors within scope are used."
+    },
+    {
+      "id": "SRC-028",
+      "title": "วิธีการให้อาหารต่อคุณภาพน้ำเชื้อของพ่อสุกร",
+      "organization": "กรมปศุสัตว์ / มหาวิทยาลัยเกษตรศาสตร์ record",
+      "url": "https://kukr.lib.ku.ac.th/covid19/Detail/info/253325",
+      "publication_date": "1988",
+      "accessed_date": "2026-08-23",
+      "tier": "A",
+      "language": "th",
+      "topics": [
+        "1.4"
+      ],
+      "notes": "Thai source found but not used for core behaviour claims; studies feeding method and semen quality in young boars."
+    },
+    {
+      "id": "SRC-029",
+      "title": "การตรวจจับพฤติกรรมการกินของสุกรแบบอัตโนมัติ",
+      "organization": "มหาวิทยาลัยอุบลราชธานี",
+      "url": "https://agri.ubu.ac.th/mis/seminar/upload/323BC5oqk7HGK.pdf",
+      "publication_date": "unknown",
+      "accessed_date": "2026-08-23",
+      "tier": "A",
+      "language": "th",
+      "topics": [
+        "1.4"
+      ],
+      "notes": "Found in search but PDF content/metadata not sufficiently verified; NOT USED."
     }
   ],
   "notes": "Source records are topic-specific and were added after retrieval/evaluation for topic 1.1.",
