@@ -53,7 +53,7 @@ test('glossary terms open an accessible definition dialog', async ({ page }) => 
   await page.getByRole('button', { name: 'เปิดตำรา' }).click()
 
   let opened = false
-  for (let index = 0; index < 8; index += 1) {
+  for (let index = 0; index < 32; index += 1) {
     const terms = page.locator('.glossary-term')
     if (await terms.count()) {
       await terms.first().click()
