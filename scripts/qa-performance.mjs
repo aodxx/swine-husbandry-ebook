@@ -11,8 +11,8 @@ if (!fs.existsSync(indexPath)) {
 const html = fs.readFileSync(indexPath, 'utf8')
 const assetPaths = [...html.matchAll(/(?:src|href)=["']([^"']+\.(?:js|css))["']/g)].map(match => match[1])
 const assets = assetPaths.map(asset => {
-  const relative = asset.replace(/^\.?\//, '')
-  const file = path.join(dist, relative)
+  const assetRelative = asset.match(/assets\/.+$/)?.[0] ?? asset.replace(/^\.?\//, '')
+  const file = path.join(dist, assetRelative)
   if (!fs.existsSync(file)) throw new Error(`Missing initial asset: ${asset}`)
   return { asset, size: fs.statSync(file).size, type: asset.endsWith('.js') ? 'js' : 'css' }
 })
