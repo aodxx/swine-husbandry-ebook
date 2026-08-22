@@ -154,6 +154,90 @@
         "1.1"
       ],
       "notes": "Thai government document on production, breeds, and husbandry; not used to establish core taxonomy or physiology claims."
+    },
+    {
+      "id": "SRC-012",
+      "title": "Effects of environmental enrichment on behaviour, physiology and performance of pigs — A review",
+      "organization": "Asian-Australasian Journal of Animal Sciences / Mkwanazi et al.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6325398/",
+      "publication_date": "2019",
+      "accessed_date": "2026-08-23",
+      "tier": "C",
+      "language": "en",
+      "topics": [
+        "1.2"
+      ],
+      "notes": "Review supporting rooting, exploring, foraging, play and enrichment effects; not a Thailand-specific manual."
+    },
+    {
+      "id": "SRC-013",
+      "title": "Behavior of Swine",
+      "organization": "Merck Veterinary Manual / Nogues & Creutzinger; peer reviewed by Abuelo",
+      "url": "https://www.merckvetmanual.com/behavior/behavior-of-production-animals/behavior-of-swine",
+      "publication_date": "2025",
+      "accessed_date": "2026-08-23",
+      "tier": "C",
+      "language": "en",
+      "topics": [
+        "1.2"
+      ],
+      "notes": "Reviewed veterinary summary supporting social behavior, communication, mixing and behavior problems; secondary source."
+    },
+    {
+      "id": "SRC-014",
+      "title": "Effects of Environmental Enrichment on Pig Welfare — A Review",
+      "organization": "Animals / Wójciak et al.",
+      "url": "https://www.mdpi.com/2076-2615/9/6/383",
+      "publication_date": "2019",
+      "accessed_date": "2026-08-23",
+      "tier": "C",
+      "language": "en",
+      "topics": [
+        "1.2"
+      ],
+      "notes": "Review with section on natural behavior and needs, rooting, foraging and enrichment; some European context."
+    },
+    {
+      "id": "SRC-015",
+      "title": "Activity behaviour and social interactions of pigs raised outdoors and indoors",
+      "organization": "Acta Agriculturae Scandinavica, Section A — Animal Science / Petersen et al.",
+      "url": "https://aab.copernicus.org/articles/51/338/2008/",
+      "publication_date": "2008",
+      "accessed_date": "2026-08-23",
+      "tier": "C",
+      "language": "en",
+      "topics": [
+        "1.2"
+      ],
+      "notes": "Primary field study abstract comparing outdoor and indoor activity; experimental population and conditions are specific."
+    },
+    {
+      "id": "SRC-016",
+      "title": "พฤติกรรมธรรมชาติ : สวัสดิภาพในสุกรและไก่",
+      "organization": "วารสารวิทยาศาสตร์และเทคโนโลยี มหาวิทยาลัยธรรมศาสตร์",
+      "url": "http://tujournals.tu.ac.th/tstj/detailart.aspx?ArticleID=3755",
+      "publication_date": null,
+      "accessed_date": "2026-08-23",
+      "tier": "A-search-not-verified",
+      "language": "th",
+      "topics": [
+        "1.2"
+      ],
+      "notes": "Search result appears relevant, but article page content could not be extracted; not used as evidence."
+    },
+    {
+      "id": "SRC-017",
+      "title": "คู่มือศูนย์เรียนรู้ด้านปศุสัตว์อินทรีย์ ปีงบประมาณ 2567",
+      "organization": "กรมปศุสัตว์ / สำนักพัฒนาพันธุ์สัตว์",
+      "url": "https://breeding.dld.go.th/images/Manual/2567/Manual_organic_67.pdf",
+      "publication_date": "2023",
+      "accessed_date": "2026-08-23",
+      "tier": "A-search-not-verified",
+      "language": "th",
+      "topics": [
+        "1.2"
+      ],
+      "notes": "Thai government PDF discovered but browser extraction returned encoded stream; not used as evidence until readable text is verified."
     }
   ],
   "notes": "Source records are topic-specific and were added after retrieval/evaluation for topic 1.1.",
