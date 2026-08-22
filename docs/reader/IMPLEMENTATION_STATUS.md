@@ -30,6 +30,9 @@ Branch: `feature/reader-v0.1`
 - [ ] GitHub Pages deploy workflow
 - [ ] Build / TypeScript / mobile QA
 
+## Validation Note
+The execution runtime used in this chat cannot resolve `github.com`, so a local clone + `npm install && npm run build` cannot be used as evidence. GitHub-visible CI/build validation is still required before merge.
+
 ## Guardrails
 - Reading Mode remains the primary fallback.
 - Reader loads content from `content/`; no academic text is hard-coded in UI.
