@@ -4,19 +4,19 @@ Generated from `data/research-status.json` on 2026-08-23. Do not edit counts man
 
 ## Current Project State
 
-Chapter 1 status: `OWNER_REVIEW_PASSED`. Current Focus is `3.8` — All-in/All-out. Next Topic is `3.8` — All-in/All-out; `CHAPTER_3_CONTENT_PRODUCTION`.
+Chapter 1 status: `OWNER_REVIEW_PASSED`. Current Focus is `3.9` — เงินลงทุนเริ่มต้น. Next Topic is `3.9` — เงินลงทุนเริ่มต้น; `CHAPTER_3_CONTENT_PRODUCTION`.
 
 ## Current State Count
 
 | Status | Count |
 |---|---:|
-| TODO | 305 |
+| TODO | 304 |
 | RESEARCHING | 0 |
 | SOURCES_COLLECTED | 0 |
 | FACTS_EXTRACTED | 0 |
 | DRAFTED | 0 |
 | FACT_CHECKED | 0 |
-| EDITORIAL_REVIEW | 33 |
+| EDITORIAL_REVIEW | 34 |
 | APPROVED | 0 |
 | PUBLISHED | 0 |
 | BLOCKED | 0 |
@@ -28,16 +28,16 @@ Chapter 1 status: `OWNER_REVIEW_PASSED`. Current Focus is `3.8` — All-in/All-o
 
 | Milestone reached | Count |
 |---|---:|
-| Drafted or beyond | 33 |
-| Fact checked or beyond | 33 |
-| Editorial review or beyond | 33 |
+| Drafted or beyond | 34 |
+| Fact checked or beyond | 34 |
+| Editorial review or beyond | 34 |
 | Approved | 0 |
 | Published | 0 |
 
 ## Current Focus
 
-- **Current Topic:** `3.8` — All-in/All-out
-- **Next Topic:** `3.8` — All-in/All-out
+- **Current Topic:** `3.9` — เงินลงทุนเริ่มต้น
+- **Next Topic:** `3.9` — เงินลงทุนเริ่มต้น
 - **Next Topic Gate:** `CHAPTER_3_CONTENT_PRODUCTION`
 - **Research status:** `TODO`
 - **Last reviewed:** None
