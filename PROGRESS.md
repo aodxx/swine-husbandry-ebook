@@ -4,19 +4,19 @@ Generated from `data/research-status.json` on 2026-08-23. Do not edit counts man
 
 ## Current Project State
 
-Chapter 1 status: `OWNER_REVIEW_PASSED`. Current Focus is `2.3` — Landrace. Next Topic is `2.4` — Duroc; `CHAPTER_2_CONTENT_PRODUCTION`.
+Chapter 1 status: `OWNER_REVIEW_PASSED`. Current Focus is `2.4` — Duroc. Next Topic is `2.5` — Pietrain; `CHAPTER_2_CONTENT_PRODUCTION`.
 
 ## Current State Count
 
 | Status | Count |
 |---|---:|
-| TODO | 324 |
+| TODO | 323 |
 | RESEARCHING | 0 |
 | SOURCES_COLLECTED | 0 |
 | FACTS_EXTRACTED | 0 |
 | DRAFTED | 0 |
 | FACT_CHECKED | 0 |
-| EDITORIAL_REVIEW | 14 |
+| EDITORIAL_REVIEW | 15 |
 | APPROVED | 0 |
 | PUBLISHED | 0 |
 | BLOCKED | 0 |
@@ -28,16 +28,16 @@ Chapter 1 status: `OWNER_REVIEW_PASSED`. Current Focus is `2.3` — Landrace. Ne
 
 | Milestone reached | Count |
 |---|---:|
-| Drafted or beyond | 14 |
-| Fact checked or beyond | 14 |
-| Editorial review or beyond | 14 |
+| Drafted or beyond | 15 |
+| Fact checked or beyond | 15 |
+| Editorial review or beyond | 15 |
 | Approved | 0 |
 | Published | 0 |
 
 ## Current Focus
 
-- **Current Topic:** `2.3` — Landrace
-- **Next Topic:** `2.4` — Duroc
+- **Current Topic:** `2.4` — Duroc
+- **Next Topic:** `2.5` — Pietrain
 - **Next Topic Gate:** `CHAPTER_2_CONTENT_PRODUCTION`
 - **Research status:** `EDITORIAL_REVIEW`
 - **Last reviewed:** 2026-08-23
