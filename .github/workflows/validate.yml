@@ -1,0 +1,28 @@
+name: Validate ebook state and content
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Validate TOC
+        run: ./scripts/validate-toc
+      - name: Validate sources
+        run: ./scripts/validate-sources
+      - name: Validate status synchronization
+        run: ./scripts/validate-status
+      - name: Validate content
+        run: ./scripts/validate-content
+      - name: Verify generated progress is current
+        run: |
+          cp PROGRESS.md /tmp/PROGRESS.before.md
+          ./scripts/generate-progress
+          diff -u /tmp/PROGRESS.before.md PROGRESS.md

@@ -1,36 +1,55 @@
 # Project Progress
 
+Generated from `data/research-status.json` on 2026-08-23. Do not edit counts manually.
+
 ## Current Project State
 
-Foundation setup is initialized from the supplied PRD and Blueprint. Research for topic 1.1 has reached EDITORIAL_REVIEW; approval is intentionally blocked pending owner review and production validation.
+Current Focus is `1.1` — หมูคือสัตว์แบบไหน. Topic `1.2` remains locked until topic `1.1` passes the project Quality Gate.
 
-| Metric | Count |
+## Current State Count
+
+| Status | Count |
 |---|---:|
-| Total topics in Master TOC | 338 |
 | TODO | 337 |
-| Researching | 0 |
-| Drafted | 0 |
-| Fact checked | 0 |
+| RESEARCHING | 0 |
+| SOURCES_COLLECTED | 0 |
+| FACTS_EXTRACTED | 0 |
+| DRAFTED | 0 |
+| FACT_CHECKED | 0 |
+| EDITORIAL_REVIEW | 1 |
+| APPROVED | 0 |
+| PUBLISHED | 0 |
+| BLOCKED | 0 |
+| HIGH_RISK_REVIEW | 0 |
+| PENDING_FARM_HISTORY | 0 |
+| NEEDS_UPDATE | 0 |
+
+## Milestone Count (cumulative)
+
+| Milestone reached | Count |
+|---|---:|
+| Drafted or beyond | 1 |
+| Fact checked or beyond | 1 |
+| Editorial review or beyond | 1 |
 | Approved | 0 |
 | Published | 0 |
-| Needs update | 0 |
-| Blocked | 0 |
 
 ## Current Focus
 
 - **Current Topic:** `1.1` — หมูคือสัตว์แบบไหน
 - **Next Topic:** `1.2` — ธรรมชาติและพฤติกรรมของหมู
 - **Research status:** `EDITORIAL_REVIEW`
-- **Research started:** 2026-08-23
-- **Research date:** 2026-08-22 (foundation preparation only)
+- **Last reviewed:** 2026-08-23
 
 ## Foundation Checklist
 
-- [x] PRD and Blueprint copied to canonical filenames
-- [x] Master TOC generated from PRD
-- [x] Research status registry created
-- [x] Research workspace for 1.1 created
-- [x] Farm heritage placeholder preserved
-- [ ] Reader/App implementation
-- [ ] Validation scripts and CI
-- [x] Research questions, source evaluation, fact extraction, conflict notes, Draft, Fact Check, and Editorial Review for 1.1
+- [x] Content/Research Foundation: governing documents, Master TOC, status registry, research workspace, source registry/schema, and content schema
+- [ ] Reader/App Foundation
+- [x] Persistent validation scripts for content, sources, status, and TOC
+- [x] CI validation on push and pull request
+
+## State Governance
+
+- `data/research-status.json` is the Single Source of Truth for topic status.
+- Content front matter must match the status registry before merge.
+- This file is generated; update the registry, then run `scripts/generate-progress`.
