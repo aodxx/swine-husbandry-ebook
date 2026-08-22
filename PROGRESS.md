@@ -4,19 +4,19 @@ Generated from `data/research-status.json` on 2026-08-23. Do not edit counts man
 
 ## Current Project State
 
-Chapter 1 status: `OWNER_REVIEW_PASSED`. Current Focus is `2.1` — สุกรพันธุ์แท้และลูกผสม. Next Topic is `2.2` — Large White / Yorkshire; `CHAPTER_2_CONTENT_PRODUCTION`.
+Chapter 1 status: `OWNER_REVIEW_PASSED`. Current Focus is `2.2` — Large White / Yorkshire. Next Topic is `2.3` — Landrace; `CHAPTER_2_CONTENT_PRODUCTION`.
 
 ## Current State Count
 
 | Status | Count |
 |---|---:|
-| TODO | 326 |
+| TODO | 325 |
 | RESEARCHING | 0 |
 | SOURCES_COLLECTED | 0 |
 | FACTS_EXTRACTED | 0 |
 | DRAFTED | 0 |
 | FACT_CHECKED | 0 |
-| EDITORIAL_REVIEW | 12 |
+| EDITORIAL_REVIEW | 13 |
 | APPROVED | 0 |
 | PUBLISHED | 0 |
 | BLOCKED | 0 |
@@ -28,16 +28,16 @@ Chapter 1 status: `OWNER_REVIEW_PASSED`. Current Focus is `2.1` — สุกร
 
 | Milestone reached | Count |
 |---|---:|
-| Drafted or beyond | 12 |
-| Fact checked or beyond | 12 |
-| Editorial review or beyond | 12 |
+| Drafted or beyond | 13 |
+| Fact checked or beyond | 13 |
+| Editorial review or beyond | 13 |
 | Approved | 0 |
 | Published | 0 |
 
 ## Current Focus
 
-- **Current Topic:** `2.1` — สุกรพันธุ์แท้และลูกผสม
-- **Next Topic:** `2.2` — Large White / Yorkshire
+- **Current Topic:** `2.2` — Large White / Yorkshire
+- **Next Topic:** `2.3` — Landrace
 - **Next Topic Gate:** `CHAPTER_2_CONTENT_PRODUCTION`
 - **Research status:** `EDITORIAL_REVIEW`
 - **Last reviewed:** 2026-08-23

@@ -1190,6 +1190,62 @@
         "2.1"
       ],
       "notes": "Same document, registered separately only for target-market/production-system claim mapping."
+    },
+    {
+      "id": "SRC-086",
+      "title": "Large White",
+      "organization": "British Pig Association",
+      "url": "https://www.britishpigs.org.uk/breed-information/large-white",
+      "publication_date": null,
+      "accessed_date": "2026-08-23",
+      "tier": "D",
+      "language": "en",
+      "topics": [
+        "2.2"
+      ],
+      "notes": "Breed organization source for name, history and breed description; not used as sole source for universal claims."
+    },
+    {
+      "id": "SRC-087",
+      "title": "Yorkshire Swine",
+      "organization": "Oklahoma State University, Breeds of Livestock",
+      "url": "https://breeds.okstate.edu/swine/american-yorkshire-swine",
+      "publication_date": null,
+      "accessed_date": "2026-08-23",
+      "tier": "C",
+      "language": "en",
+      "topics": [
+        "2.2"
+      ],
+      "notes": "University source for historical name and herd-book context; historical narrative and no Thai benchmark."
+    },
+    {
+      "id": "SRC-088",
+      "title": "สุกรพันธุ์ลาร์จไวท์ สายพันธุ์อเมริกา และอังกฤษ",
+      "organization": "กรมปศุสัตว์ ศูนย์วิจัยและบำรุงพันธุ์สัตว์",
+      "url": "https://lctk-sbr.dld.go.th/animal/pig/largewhite-american-and-british.html",
+      "publication_date": null,
+      "accessed_date": "2026-08-23",
+      "tier": "A",
+      "language": "th",
+      "topics": [
+        "2.2"
+      ],
+      "notes": "Search-discovered Thai government page; direct retrieval unavailable in this round, contextual lead only."
+    },
+    {
+      "id": "SRC-089",
+      "title": "สุกรพันธุ์ลาร์จไวท์ สายพันธุ์ไอร์แลนด์",
+      "organization": "กรมปศุสัตว์ ศูนย์วิจัยและบำรุงพันธุ์สัตว์",
+      "url": "https://lctk-sbr.dld.go.th/animal/pig/largewhite-ireland.html",
+      "publication_date": null,
+      "accessed_date": "2026-08-23",
+      "tier": "A",
+      "language": "th",
+      "topics": [
+        "2.2"
+      ],
+      "notes": "Search-discovered Thai government page; direct retrieval unavailable in this round, contextual lead only."
     }
   ],
   "notes": "Source records are topic-specific and were added after retrieval/evaluation for topic 1.1.",
