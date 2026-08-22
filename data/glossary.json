@@ -1,4 +1,22 @@
 {
   "schema_version": "1.0",
-  "terms": []
+  "terms": [
+    {"id":"boar","th":"พ่อพันธุ์","en":"boar","definition_th":"สุกรเพศผู้ที่ใช้หรือเหมาะสำหรับการผสมพันธุ์","source_ids":["SRC-071"]},
+    {"id":"barrow","th":"สุกรเพศผู้ตอน","en":"barrow","definition_th":"สุกรเพศผู้ที่ตอนแล้ว","source_ids":["SRC-071"]},
+    {"id":"gilt","th":"สุกรสาว","en":"gilt","definition_th":"สุกรเพศเมียที่ยังไม่เคยคลอดตามบริบทของแหล่งอ้างอิง","source_ids":["SRC-072"],"context_note":"เกณฑ์อายุ น้ำหนัก และการคัดเข้าฝูงอาจต่างกัน"},
+    {"id":"sow","th":"แม่สุกร","en":"sow","definition_th":"สุกรเพศเมียที่เคยคลอดแล้ว","source_ids":["SRC-072"]},
+    {"id":"piglet","th":"ลูกสุกร","en":"piglet","definition_th":"ลูกของสุกรเพศผู้และเพศเมีย หรือสุกรวัยอ่อนตามบริบท","source_ids":["SRC-071"]},
+    {"id":"litter","th":"ครอก","en":"litter","definition_th":"กลุ่มลูกสุกรที่เกิดจากแม่สุกรตัวเดียวกันในเหตุการณ์คลอดครั้งเดียว","source_ids":["SRC-071"]},
+    {"id":"farrowing","th":"การคลอด/ช่วงคลอด","en":"farrowing","definition_th":"คำที่ต้องอ่านตามบริบท อาจหมายถึงเหตุการณ์คลอดหรือช่วงตั้งแต่คลอดถึงหย่านม","source_ids":["SRC-071"],"context_note":"ไม่ควรใช้คำแปลสั้น ๆ โดยไม่ระบุขอบเขต"},
+    {"id":"gestation","th":"ระยะตั้งท้อง","en":"gestation","definition_th":"ช่วงตั้งแต่ผสมจนถึงคลอด","source_ids":["SRC-071"]},
+    {"id":"lactation","th":"ระยะให้นม","en":"lactation","definition_th":"ช่วงที่แม่สุกรให้นมลูก","source_ids":["SRC-071"]},
+    {"id":"weaning","th":"การหย่านม","en":"weaning","definition_th":"การแยกลูกสุกรออกจากแม่และเข้าสู่ระยะถัดไป","source_ids":["SRC-071"]},
+    {"id":"nursery","th":"สุกรอนุบาล/ระยะอนุบาล","en":"nursery","definition_th":"ระยะเติบโตหลังหย่านมก่อนเข้า grow-finish ตาม glossary หนึ่ง","source_ids":["SRC-071"],"context_note":"บางฟาร์มรวม nursery กับช่วงขุน"},
+    {"id":"grow-finish","th":"ระยะเติบโตและขุน","en":"grow-finish","definition_th":"ช่วงระหว่าง nursery กับตลาด","source_ids":["SRC-071"]},
+    {"id":"aiao","th":"ระบบเข้าเป็นกลุ่ม-ออกเป็นกลุ่ม","en":"all-in–all-out (AIAO)","definition_th":"การเคลื่อนสุกรเข้าและออกจากพื้นที่เป็นกลุ่มแยกจากกันและทำความสะอาดระหว่างรอบ","source_ids":["SRC-071","SRC-074"]},
+    {"id":"multi-site","th":"ระบบหลายสถานที่","en":"multi-site production","definition_th":"การแยกช่วงการผลิตไว้ต่างสถานที่หรือหน่วยเฉพาะ","source_ids":["SRC-075"]},
+    {"id":"traceability","th":"การตรวจสอบย้อนกลับ","en":"traceability","definition_th":"ความสามารถติดตามแหล่งที่มา การเคลื่อนย้าย และข้อมูลของกลุ่มสุกร","source_ids":["SRC-075","SRC-076"]},
+    {"id":"adg","th":"อัตราการเพิ่มน้ำหนักเฉลี่ยต่อวัน","en":"average daily gain (ADG)","definition_th":"อัตราการเพิ่มน้ำหนักเฉลี่ยต่อวัน; ต้องระบุช่วงเวลาและประชากร","source_ids":["SRC-078"]},
+    {"id":"fcr","th":"อัตราส่วนการเปลี่ยนอาหารเป็นน้ำหนัก","en":"feed conversion ratio (FCR)","definition_th":"อัตราส่วนอาหารต่อการเพิ่มน้ำหนัก; ต้องระบุสูตรและขอบเขตการนับ","source_ids":["SRC-078"]}
+  ]
 }

@@ -10,13 +10,13 @@ Current Focus is `1.11` — คำศัพท์พื้นฐานที่�
 
 | Status | Count |
 |---|---:|
-| TODO | 328 |
+| TODO | 327 |
 | RESEARCHING | 0 |
 | SOURCES_COLLECTED | 0 |
 | FACTS_EXTRACTED | 0 |
 | DRAFTED | 0 |
 | FACT_CHECKED | 0 |
-| EDITORIAL_REVIEW | 10 |
+| EDITORIAL_REVIEW | 11 |
 | APPROVED | 0 |
 | PUBLISHED | 0 |
 | BLOCKED | 0 |
@@ -28,9 +28,9 @@ Current Focus is `1.11` — คำศัพท์พื้นฐานที่�
 
 | Milestone reached | Count |
 |---|---:|
-| Drafted or beyond | 10 |
-| Fact checked or beyond | 10 |
-| Editorial review or beyond | 10 |
+| Drafted or beyond | 11 |
+| Fact checked or beyond | 11 |
+| Editorial review or beyond | 11 |
 | Approved | 0 |
 | Published | 0 |
 
@@ -38,8 +38,8 @@ Current Focus is `1.11` — คำศัพท์พื้นฐานที่�
 
 - **Current Topic:** `1.11` — คำศัพท์พื้นฐานที่คนเลี้ยงหมูต้องรู้
 - **Next Topic:** `1.11` — คำศัพท์พื้นฐานที่คนเลี้ยงหมูต้องรู้
-- **Research status:** `TODO`
-- **Last reviewed:** None
+- **Research status:** `EDITORIAL_REVIEW`
+- **Last reviewed:** 2026-08-23
 
 ## Foundation Checklist
 
