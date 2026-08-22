@@ -1,4 +1,4 @@
-const CACHE_NAME = 'niphon-farm-reader-v0.1.3'
+const CACHE_NAME = 'niphon-farm-reader-v0.1.4'
 const CORE = ['./', './index.html', './manifest.webmanifest', './icon.svg']
 
 async function cacheBuiltShell(cache) {
@@ -39,9 +39,9 @@ self.addEventListener('activate', event => {
 })
 
 async function cachedResponseFor(request) {
-  const direct = await caches.match(request)
+  const direct = await caches.match(request, { ignoreVary: true })
   if (direct) return direct
-  return caches.match(request, { ignoreSearch: true })
+  return caches.match(request, { ignoreSearch: true, ignoreVary: true })
 }
 
 self.addEventListener('fetch', event => {
@@ -60,7 +60,7 @@ self.addEventListener('fetch', event => {
         }
         return response
       } catch {
-        return (await cachedResponseFor(request)) || (await caches.match('./index.html'))
+        return (await cachedResponseFor(request)) || (await caches.match('./index.html', { ignoreVary: true }))
       }
     })())
     return
