@@ -105,12 +105,24 @@ test('reader reloads offline after first online visit', async ({ page, context }
   })
   await page.waitForFunction(() => Boolean(navigator.serviceWorker?.controller), undefined, { timeout: 15000 })
 
-  const cachedAssetCount = await page.evaluate(async () => {
+  const cacheState = await page.evaluate(async () => {
+    const scriptUrl = (document.querySelector('script[type="module"]') as HTMLScriptElement | null)?.src ?? ''
+    const styleUrls = [...document.querySelectorAll<HTMLLinkElement>('link[rel="stylesheet"]')].map(link => link.href)
     const keys = await caches.keys()
     const requests = (await Promise.all(keys.map(async key => (await caches.open(key)).keys()))).flat()
-    return requests.filter(request => /\/assets\/.*\.(?:js|css)(?:\?|$)/.test(new URL(request.url).pathname)).length
+    const cachedUrls = requests.map(request => request.url)
+    return {
+      scriptUrl,
+      styleUrls,
+      cachedUrls,
+      scriptCached: scriptUrl ? Boolean(await caches.match(scriptUrl)) : false,
+      stylesCached: await Promise.all(styleUrls.map(async url => Boolean(await caches.match(url))))
+    }
   })
-  expect(cachedAssetCount).toBeGreaterThanOrEqual(2)
+  expect(cacheState.scriptUrl, JSON.stringify(cacheState, null, 2)).toBeTruthy()
+  expect(cacheState.scriptCached, JSON.stringify(cacheState, null, 2)).toBeTruthy()
+  expect(cacheState.styleUrls.length, JSON.stringify(cacheState, null, 2)).toBeGreaterThan(0)
+  expect(cacheState.stylesCached.every(Boolean), JSON.stringify(cacheState, null, 2)).toBeTruthy()
 
   await context.setOffline(true)
   await page.reload({ waitUntil: 'domcontentloaded' })
