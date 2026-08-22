@@ -52,7 +52,9 @@
 
 ## Chapter transition
 
-workflow_state = CHAPTER_3_CONTENT_PRODUCTION; chapter_3_production.status = IN_PROGRESS; do_not_start_chapter_4 = True. หลังปิดบทให้ตั้ง Chapter 4 เป็น LOCKED และหยุด Content Production ตามคำสั่ง.
+workflow_state = CHAPTER_3_CLOSED_CHAPTER_4_LOCKED; chapter_3_production.status = FULL_CHAPTER_AUDITED; next_topic = 4.1; chapter_4_locked = true; do_not_start_chapter_4 = true; owner_review_required = true.
+
+Chapter 3 ปิดแล้วหลัง Full Chapter Quality Audit และ Chapter 4 ต้องไม่เริ่มจนกว่าจะได้รับคำสั่งใหม่จาก Owner.
 
 ## Audit conclusion
 
@@ -61,16 +63,3 @@ Chapter 3 ผ่าน Full Chapter 3 Quality Audit ระดับ Repository/E
 ## Automated issues requiring review
 
 ไม่พบ automated issue
-
-## Final Closure State
-
-- Chapter 3 status: `FULL_CHAPTER_AUDITED`
-- Subtopics completed: `3.1–3.12` (12/12)
-- Chapter 4: `LOCKED` ผ่าน `chapter_4_locked = true`
-- Workflow state: `CHAPTER_3_CLOSED_CHAPTER_4_LOCKED`
-- Owner Review: `READY_FOR_OWNER_REVIEW`
-- Content production: หยุดตามคำสั่ง; ห้ามเริ่ม Chapter 4
-- Validation after closure: Content, Source, State และ TOC — PASS
-- Closure date: 2026-08-23
-
-> หมายเหตุ: สถานะรายหัวข้อ 4.x คงเป็น `TODO` ตาม schema validator ของ Repository ส่วนการล็อก Chapter 4 ใช้ฟิลด์ระดับ workflow/chapter เพื่อไม่บิดเบือนสถานะเนื้อหาที่ยังไม่ได้เริ่ม
