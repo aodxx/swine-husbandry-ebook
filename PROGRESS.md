@@ -10,13 +10,13 @@ Chapter 1 status: `OWNER_REVIEW_PASSED`. Current Focus is `3.12` — Checklist �
 
 | Status | Count |
 |---|---:|
-| TODO | 301 |
+| TODO | 300 |
 | RESEARCHING | 0 |
 | SOURCES_COLLECTED | 0 |
 | FACTS_EXTRACTED | 0 |
 | DRAFTED | 0 |
 | FACT_CHECKED | 0 |
-| EDITORIAL_REVIEW | 37 |
+| EDITORIAL_REVIEW | 38 |
 | APPROVED | 0 |
 | PUBLISHED | 0 |
 | BLOCKED | 0 |
@@ -28,9 +28,9 @@ Chapter 1 status: `OWNER_REVIEW_PASSED`. Current Focus is `3.12` — Checklist �
 
 | Milestone reached | Count |
 |---|---:|
-| Drafted or beyond | 37 |
-| Fact checked or beyond | 37 |
-| Editorial review or beyond | 37 |
+| Drafted or beyond | 38 |
+| Fact checked or beyond | 38 |
+| Editorial review or beyond | 38 |
 | Approved | 0 |
 | Published | 0 |
 
@@ -39,8 +39,8 @@ Chapter 1 status: `OWNER_REVIEW_PASSED`. Current Focus is `3.12` — Checklist �
 - **Current Topic:** `3.12` — Checklist ก่อนเริ่มเลี้ยง
 - **Next Topic:** `3.12` — Checklist ก่อนเริ่มเลี้ยง
 - **Next Topic Gate:** `CHAPTER_3_CONTENT_PRODUCTION`
-- **Research status:** `TODO`
-- **Last reviewed:** None
+- **Research status:** `EDITORIAL_REVIEW`
+- **Last reviewed:** 2026-08-23
 
 ## Foundation Checklist
 

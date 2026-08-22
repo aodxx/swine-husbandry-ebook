@@ -742,19 +742,22 @@
     {
       "id": "3.12",
       "title": "Checklist ก่อนเริ่มเลี้ยง",
-      "status": "TODO",
-      "research_started": null,
-      "research_completed": null,
-      "draft_completed": null,
-      "fact_checked": null,
+      "status": "EDITORIAL_REVIEW",
+      "research_started": "2026-08-23",
+      "research_completed": "2026-08-23",
+      "draft_completed": "2026-08-23",
+      "fact_checked": "2026-08-23",
       "approved": null,
-      "last_reviewed": null,
-      "reviewed_by": null,
-      "source_count": 0,
-      "risk_level": "normal",
+      "last_reviewed": "2026-08-23",
+      "reviewed_by": "Manus AI",
+      "source_count": 6,
+      "risk_level": "high",
       "farm_context": false,
-      "remaining_questions": [],
-      "notes": "Foundation initialized; research not started."
+      "remaining_questions": [
+        "ต้องตรวจ version ของมาตรฐาน แบบฟอร์ม และข้อกำหนดพื้นที่จริงก่อนเริ่ม"
+      ],
+      "notes": "Foundation initialized; research not started.",
+      "subtopic_quality_gate": "PASS"
     },
     {
       "id": "4.1",
