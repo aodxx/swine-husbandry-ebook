@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
+import '../interactions.css'
 
 type Props = {
   html: string
