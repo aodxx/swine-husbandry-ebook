@@ -1,7 +1,6 @@
 # Conflict / Uncertainty Check — 1.4 พฤติกรรมการกิน
 
 วันที่ตรวจ: 2026-08-23
-สถานะ: RESEARCHING
 
 ## C14-001: นิยาม meal และ feeder visit ไม่เหมือนกัน
 

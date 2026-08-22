@@ -4,7 +4,7 @@ Generated from `data/research-status.json` on 2026-08-23. Do not edit counts man
 
 ## Current Project State
 
-Current Focus is `1.11` — คำศัพท์พื้นฐานที่คนเลี้ยงหมูต้องรู้. Topic `1.2` remains locked until topic `1.1` passes the project Quality Gate.
+Chapter 1 status: `OWNER_REVIEW_PASSED`. Current Focus is `2.1` — สุกรพันธุ์แท้และลูกผสม. Next Topic is `2.1` — สุกรพันธุ์แท้และลูกผสม; `CHAPTER_2_LOCKED_NO_CONTENT_PRODUCTION`.
 
 ## Current State Count
 
@@ -36,10 +36,11 @@ Current Focus is `1.11` — คำศัพท์พื้นฐานที่�
 
 ## Current Focus
 
-- **Current Topic:** `1.11` — คำศัพท์พื้นฐานที่คนเลี้ยงหมูต้องรู้
-- **Next Topic:** `1.11` — คำศัพท์พื้นฐานที่คนเลี้ยงหมูต้องรู้
-- **Research status:** `EDITORIAL_REVIEW`
-- **Last reviewed:** 2026-08-23
+- **Current Topic:** `2.1` — สุกรพันธุ์แท้และลูกผสม
+- **Next Topic:** `2.1` — สุกรพันธุ์แท้และลูกผสม
+- **Next Topic Gate:** `CHAPTER_2_LOCKED_NO_CONTENT_PRODUCTION`
+- **Research status:** `TODO`
+- **Last reviewed:** None
 
 ## Foundation Checklist
 

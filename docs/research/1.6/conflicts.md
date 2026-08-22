@@ -1,6 +1,5 @@
 # conflicts — หัวข้อ 1.6
 
-สถานะ: ยังไม่เริ่ม Research
 
 
 ## C16-001: stress response กับ welfare problem ไม่ใช่สิ่งเดียวกัน

@@ -1,7 +1,6 @@
 # Draft Notes — 1.10 จากพ่อแม่พันธุ์ถึงสุกรตลาด
 
 วันที่ร่าง: 2026-08-23
-สถานะ: DRAFTED
 
 ## Editorial decisions
 

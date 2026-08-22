@@ -2,8 +2,8 @@
   "schema_version": "1.0",
   "project": "swine-husbandry-ebook",
   "last_updated": "2026-08-23",
-  "current_focus": "1.11",
-  "next_topic": "1.11",
+  "current_focus": "2.1",
+  "next_topic": "2.1",
   "allowed_statuses": [
     "TODO",
     "RESEARCHING",
@@ -5778,5 +5778,31 @@
       "remaining_questions": [],
       "notes": "Foundation initialized; research not started."
     }
-  ]
+  ],
+  "workflow_state": "CHAPTER_2_LOCKED_NO_CONTENT_PRODUCTION",
+  "chapter_closures": {
+    "1": {
+      "status": "OWNER_REVIEW_PASSED",
+      "review_result": "PASS_WITH_MINOR_FIXES",
+      "closed_date": "2026-08-23",
+      "subtopics": [
+        "1.1",
+        "1.2",
+        "1.3",
+        "1.4",
+        "1.5",
+        "1.6",
+        "1.7",
+        "1.8",
+        "1.9",
+        "1.10",
+        "1.11"
+      ],
+      "audit_report": "docs/research/chapter-01-audit.md",
+      "owner_review_required": false,
+      "next_topic": "2.1",
+      "next_topic_locked": true,
+      "notes": "Chapter 1 closure completed. Do not start 2.1 in this task."
+    }
+  }
 }

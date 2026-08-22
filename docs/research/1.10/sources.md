@@ -1,6 +1,5 @@
 # sources — หัวข้อ 1.10
 
-สถานะ: RESEARCH_COMPLETE
 
 
 ## Sources — รอบแรก

@@ -1,7 +1,6 @@
 # Fact Extraction — 1.1 หมูคือสัตว์แบบไหน
 
 วันที่สกัดข้อมูล: 2026-08-23
-สถานะ: FACTS_EXTRACTED (ยังไม่ใช่ Draft และยังไม่ผ่าน Fact Check/Editorial Review)
 
 ## FACT
 

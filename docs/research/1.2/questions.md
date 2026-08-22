@@ -1,7 +1,6 @@
 # Scope & Research Questions — 1.2 ธรรมชาติและพฤติกรรมของหมู
 
 วันที่กำหนดขอบเขต: 2026-08-23
-สถานะ: RESEARCHING
 
 ## Scope
 

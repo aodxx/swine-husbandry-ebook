@@ -1,6 +1,5 @@
 # conflicts — หัวข้อ 1.2
 
-สถานะ: ยังไม่เริ่ม Research
 
 
 ## Conflict / Uncertainty Check — รอบ Research แรก

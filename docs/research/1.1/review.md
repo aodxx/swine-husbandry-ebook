@@ -1,7 +1,6 @@
 # Review — 1.1 หมูคือสัตว์แบบไหน
 
 วันที่ตรวจ: 2026-08-23
-สถานะ: EDITORIAL_REVIEW
 ผู้ตรวจ: Manus AI
 
 ## Fact Check

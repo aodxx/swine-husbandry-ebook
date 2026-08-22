@@ -2,7 +2,6 @@
 
 วันที่ตรวจ: 2026-08-23
 ผู้ตรวจ: Manus AI
-สถานะ: EDITORIAL_REVIEW
 
 ## Fact Check
 

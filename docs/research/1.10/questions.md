@@ -1,7 +1,6 @@
 # Scope & Research Questions — 1.10 จากพ่อแม่พันธุ์ถึงสุกรตลาด
 
 วันที่กำหนดขอบเขต: 2026-08-23
-สถานะ: RESEARCHING
 
 ## Scope
 
