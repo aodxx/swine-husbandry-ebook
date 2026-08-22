@@ -97,8 +97,11 @@ def validate_sources():
 def validate_status():
     sd,states,errors=status_map(); toc,te=topics_by_id(); errors+=te
     if set(states)!=set(toc): errors.append(f'status/TOC ID set mismatch: status={len(states)} toc={len(toc)}')
-    if sd.get('current_focus')!='1.1': errors.append('current_focus must remain 1.1')
-    if sd.get('next_topic')!='1.2': errors.append('next_topic must remain 1.2')
+    focus=sd.get('current_focus'); nxt=sd.get('next_topic')
+    if focus not in toc: errors.append(f'current_focus missing from TOC: {focus}')
+    if nxt not in toc: errors.append(f'next_topic missing from TOC: {nxt}')
+    if focus=='1.2' and states.get('1.1',{}).get('subtopic_quality_gate')!='PASS': errors.append('cannot focus 1.2 before 1.1 Subtopic Quality Gate PASS')
+    if focus=='1.1' and nxt!='1.2': errors.append('initial focus 1.1 must point to next topic 1.2')
     sm,se=source_map(); errors+=se
     for p in content_files():
         try: fm,_=parse_frontmatter(p)

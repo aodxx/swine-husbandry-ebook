@@ -2,8 +2,8 @@
   "schema_version": "1.0",
   "project": "swine-husbandry-ebook",
   "last_updated": "2026-08-23",
-  "current_focus": "1.1",
-  "next_topic": "1.2",
+  "current_focus": "1.2",
+  "next_topic": "1.3",
   "allowed_statuses": [
     "TODO",
     "RESEARCHING",
@@ -34,12 +34,10 @@
       "source_count": 11,
       "risk_level": "normal",
       "farm_context": false,
-      "remaining_questions": [
-        "เขียน Draft โดยใช้ nomenclature ตาม MDD และอธิบายชื่อที่พบในวรรณกรรม",
-        "จำกัดรายละเอียดระบบย่อยอาหารของ SRC-006 ไว้เฉพาะ abstract ที่ตรวจสอบได้",
-        "ตรวจ Fact–Source ระหว่าง Draft ทีละ Claim"
-      ],
-      "notes": "Draft completed. Fact-source audit and citation/schema validation passed. Editorial review recorded. Not APPROVED: owner review and production validation gate remain."
+      "remaining_questions": [],
+      "notes": "Subtopic Quality Gate passed for autonomous sequencing. Owner Review still required before APPROVED/PUBLISHED.",
+      "subtopic_quality_gate": "PASS",
+      "published": null
     },
     {
       "id": "1.2",

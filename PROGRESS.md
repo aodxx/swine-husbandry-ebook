@@ -4,7 +4,7 @@ Generated from `data/research-status.json` on 2026-08-23. Do not edit counts man
 
 ## Current Project State
 
-Current Focus is `1.1` — หมูคือสัตว์แบบไหน. Topic `1.2` remains locked until topic `1.1` passes the project Quality Gate.
+Current Focus is `1.2` — ธรรมชาติและพฤติกรรมของหมู. Topic `1.2` remains locked until topic `1.1` passes the project Quality Gate.
 
 ## Current State Count
 
@@ -36,10 +36,10 @@ Current Focus is `1.1` — หมูคือสัตว์แบบไหน. 
 
 ## Current Focus
 
-- **Current Topic:** `1.1` — หมูคือสัตว์แบบไหน
-- **Next Topic:** `1.2` — ธรรมชาติและพฤติกรรมของหมู
-- **Research status:** `EDITORIAL_REVIEW`
-- **Last reviewed:** 2026-08-23
+- **Current Topic:** `1.2` — ธรรมชาติและพฤติกรรมของหมู
+- **Next Topic:** `1.3` — การมองเห็น การได้ยิน และการดมกลิ่น
+- **Research status:** `TODO`
+- **Last reviewed:** None
 
 ## Foundation Checklist
 
