@@ -18,6 +18,18 @@ const sourceMap = new Map(sources.map(source => [source.id, source]))
 const glossaryMap = new Map(glossaryTerms.map(term => [term.id, term]))
 const defaultPrefs: ReaderPrefs = { theme: 'light', fontScale: 1, lineHeight: 1.85, readingMode: 'reading', soundEnabled: false }
 const titleSearchEntries: SearchEntry[] = topics.map(topic => ({ ...topic, searchText: topic.title.toLocaleLowerCase('th') }))
+const availableTopicIds = new Set(topics.map(topic => topic.id))
+const availableParts = ((tocData as any).parts ?? [])
+  .map((part: any) => ({
+    ...part,
+    chapters: (part.chapters ?? [])
+      .map((chapter: any) => ({
+        ...chapter,
+        topics: (chapter.topics ?? []).filter((item: any) => availableTopicIds.has(String(item.id)))
+      }))
+      .filter((chapter: any) => chapter.topics.length > 0)
+  }))
+  .filter((part: any) => part.chapters.length > 0)
 
 function App() {
   const [view, setView] = useState<View>('cover')
@@ -45,7 +57,7 @@ function App() {
     Promise.all([loadPrefs(), loadBookmarks(), loadProgress()]).then(([savedPrefs, savedBookmarks, progress]) => {
       setPrefs(savedPrefs)
       setBookmarks(savedBookmarks)
-      if (progress) setResume({ topicId: progress.topicId, scrollY: progress.scrollY })
+      if (progress && availableTopicIds.has(progress.topicId)) setResume({ topicId: progress.topicId, scrollY: progress.scrollY })
     })
   }, [])
 
@@ -134,8 +146,7 @@ function App() {
   }
 
   if (view === 'toc') {
-    const part = (tocData as any).parts?.[0]
-    return <main className="shell"><header className="topbar"><button onClick={() => setView('cover')}>←</button><div><small>ตำรา นิพนธ์ฟาร์ม</small><h1>สารบัญ</h1></div></header><section className="search-panel"><label htmlFor="reader-search">ค้นหาใน Chapter 1–2</label><input id="reader-search" type="search" value={searchQuery} onChange={event => setSearchQuery(event.target.value)} placeholder="เช่น พฤติกรรม, Duroc, heterosis" />{searchQuery.trim() && <div className="search-results" aria-live="polite">{searchResults.length ? searchResults.map(item => <button key={item.id} onClick={() => openTopic(item.id)}><span>{item.id}</span><div><strong>{item.title}</strong><small>บทที่ {item.chapter}</small></div></button>) : <p>{searchIndexReady ? 'ไม่พบคำที่ค้นหา' : 'กำลังค้นหาเนื้อหา…'}</p>}</div>}</section>{bookmarks.length > 0 && <section className="bookmark-strip"><strong>บุ๊กมาร์ก</strong>{bookmarks.map(id => { const item = topics.find(t => t.id === id); return item ? <button key={id} onClick={() => openTopic(id)}>{id} · {item.title}</button> : null })}</section>}{!searchQuery.trim() && part?.chapters?.filter((chapter: any) => [1, 2].includes(chapter.chapter)).map((chapter: any) => <section className="chapter" key={chapter.chapter}><h2>บทที่ {chapter.chapter} · {chapter.title}</h2>{chapter.topics.map((item: any) => <button key={item.id} onClick={() => openTopic(item.id)}><span>{item.id}</span><strong>{item.title}</strong>{bookmarks.includes(item.id) && <em aria-label="บุ๊กมาร์ก">★</em>}</button>)}</section>)}</main>
+    return <main className="shell"><header className="topbar"><button onClick={() => setView('cover')}>←</button><div><small>ตำรา นิพนธ์ฟาร์ม</small><h1>สารบัญ</h1></div></header><section className="search-panel"><label htmlFor="reader-search">ค้นหาในเนื้อหาที่มีในเล่ม</label><input id="reader-search" type="search" value={searchQuery} onChange={event => setSearchQuery(event.target.value)} placeholder="เช่น พฤติกรรม, Duroc, เงินทุน" />{searchQuery.trim() && <div className="search-results" aria-live="polite">{searchResults.length ? searchResults.map(item => <button key={item.id} onClick={() => openTopic(item.id)}><span>{item.id}</span><div><strong>{item.title}</strong><small>บทที่ {item.chapter}</small></div></button>) : <p>{searchIndexReady ? 'ไม่พบคำที่ค้นหา' : 'กำลังค้นหาเนื้อหา…'}</p>}</div>}</section>{bookmarks.length > 0 && <section className="bookmark-strip"><strong>บุ๊กมาร์ก</strong>{bookmarks.map(id => { const item = topics.find(t => t.id === id); return item ? <button key={id} onClick={() => openTopic(id)}>{id} · {item.title}</button> : null })}</section>}{!searchQuery.trim() && availableParts.map((part: any) => <section key={part.part}><p className="eyebrow">ภาคที่ {part.part} · {part.title}</p>{part.chapters.map((chapter: any) => <section className="chapter" key={chapter.chapter}><h2>บทที่ {chapter.chapter} · {chapter.title}</h2>{chapter.topics.map((item: any) => <button key={item.id} onClick={() => openTopic(item.id)}><span>{item.id}</span><strong>{item.title}</strong>{bookmarks.includes(item.id) && <em aria-label="บุ๊กมาร์ก">★</em>}</button>)}</section>)}</section>)}</main>
   }
 
   if (!currentMeta) return <main className="shell"><p>ไม่พบหัวข้อนี้</p><button onClick={() => setView('toc')}>กลับสารบัญ</button></main>
