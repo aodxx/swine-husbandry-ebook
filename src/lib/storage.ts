@@ -18,13 +18,14 @@ export type ReadingProgress = {
 const DB_NAME = 'niphon-farm-reader'
 const DB_VERSION = 1
 const STORE = 'reader-state'
+const SOUND_MIGRATION_KEY = 'flipbook-sound-default-v1'
 
 const defaults: ReaderPrefs = {
   theme: 'light',
   fontScale: 1,
   lineHeight: 1.85,
   readingMode: 'reading',
-  soundEnabled: false,
+  soundEnabled: true,
 }
 
 function openDb(): Promise<IDBDatabase> {
@@ -61,7 +62,15 @@ async function setValue<T>(key: string, value: T): Promise<void> {
 
 export async function loadPrefs(): Promise<ReaderPrefs> {
   try {
-    return { ...defaults, ...(await getValue<Partial<ReaderPrefs>>('prefs')) }
+    const saved = await getValue<Partial<ReaderPrefs>>('prefs')
+    const migrated = await getValue<boolean>(SOUND_MIGRATION_KEY)
+    const merged = { ...defaults, ...saved }
+    if (!migrated) {
+      merged.soundEnabled = true
+      await setValue('prefs', merged)
+      await setValue(SOUND_MIGRATION_KEY, true)
+    }
+    return merged
   } catch {
     return defaults
   }
