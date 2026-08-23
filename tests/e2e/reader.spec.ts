@@ -31,7 +31,7 @@ test('mobile reader core journey works', async ({ page }) => {
   await page.getByRole('button', { name: 'Flipbook Mode' }).click()
   await page.getByRole('button', { name: 'ปิด', exact: true }).click()
   await expect(page.locator('.book-mode')).toBeVisible()
-  const citation = page.locator('.citation-ref').first()
+  const citation = page.locator('.book-shell > .book-page-surface .citation-ref').first()
   await expect(citation).toBeVisible()
   await citation.click()
   await expect(page.getByRole('dialog', { name: /แหล่งอ้างอิง/ })).toBeVisible()
