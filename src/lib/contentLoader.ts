@@ -10,7 +10,10 @@ export type SearchEntry = TopicMeta & { searchText: string }
 type RawLoader = () => Promise<string>
 
 const glossaryTerms = (glossaryData as { terms: GlossaryDetail[] }).terms
-const rawLoaders = import.meta.glob('../../content/part-01/chapter-*/*.md', {
+
+// Load every real chapter Markdown file in every part. The TOC still controls ordering
+// and visibility, while import.meta.glob keeps each topic lazy-loaded as its own chunk.
+const rawLoaders = import.meta.glob('../../content/part-*/chapter-*/*.md', {
   query: '?raw',
   import: 'default'
 }) as Record<string, RawLoader>
@@ -21,9 +24,9 @@ for (const [path, loader] of Object.entries(rawLoaders)) {
   if (id) loaderById.set(id, loader)
 }
 
-export const topics: TopicMeta[] = ((tocData as any).parts?.[0]?.chapters ?? [])
-  .filter((chapter: any) => [1, 2].includes(chapter.chapter))
-  .flatMap((chapter: any) => chapter.topics.map((topic: any) => ({
+export const topics: TopicMeta[] = ((tocData as any).parts ?? [])
+  .flatMap((part: any) => part.chapters ?? [])
+  .flatMap((chapter: any) => (chapter.topics ?? []).map((topic: any) => ({
     id: String(topic.id),
     title: String(topic.title),
     chapter: Number(chapter.chapter)
