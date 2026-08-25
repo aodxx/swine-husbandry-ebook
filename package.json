@@ -9,6 +9,11 @@
     "preview": "vite preview",
     "qa:reader": "node scripts/qa-reader.mjs",
     "qa:performance": "node scripts/qa-performance.mjs",
+    "validate": "npm run validate:content && npm run validate:sources && npm run validate:status && npm run validate:toc",
+    "validate:content": "./scripts/validate-content",
+    "validate:sources": "./scripts/validate-sources",
+    "validate:status": "./scripts/validate-status",
+    "validate:toc": "./scripts/validate-toc",
     "test:e2e": "playwright test"
   },
   "dependencies": {

@@ -45,7 +45,7 @@ Chapter 1 status: `OWNER_REVIEW_PASSED`. Current Focus is `3.12` â€” Checklist à
 ## Foundation Checklist
 
 - [x] Content/Research Foundation: governing documents, Master TOC, status registry, research workspace, source registry/schema, and content schema
-- [ ] Reader/App Foundation
+- [x] Reader/App Foundation: mobile-first reader, TOC, search, bookmarks, resume position, settings, citations/glossary/image overlays, Flipbook Mode, PWA/offline support, and browser QA
 - [x] Persistent validation scripts for content, sources, status, and TOC
 - [x] CI validation on push and pull request
 
