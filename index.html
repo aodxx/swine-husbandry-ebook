@@ -5,15 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <meta name="theme-color" content="#48684e" />
     <meta name="description" content="ตำรา นิพนธ์ฟาร์ม — ศาสตร์และวิถีการเลี้ยงสุกร" />
+    <meta name="reader-shell-version" content="boot-recovery-v1" />
     <link rel="manifest" href="./manifest.webmanifest" />
     <link rel="icon" href="./icon.svg" type="image/svg+xml" />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="default" />
     <title>ตำรา นิพนธ์ฟาร์ม</title>
+    <style>
+      .boot-shell{min-height:100vh;display:grid;place-items:center;padding:24px;background:#f4eedf;color:#2f3029;font-family:"Noto Sans Thai","Leelawadee UI",Tahoma,sans-serif}
+      .boot-card{width:min(100%,520px);padding:30px 24px;border:1px solid rgba(62,70,55,.18);background:#fbf7ee;box-shadow:0 18px 60px rgba(51,42,31,.14);text-align:center}
+      .boot-card small{color:#48684e;font-weight:700}.boot-card h1{margin:10px 0;font-family:Georgia,"Noto Serif Thai",serif;color:#2f4d37}.boot-card p{line-height:1.7;color:#756f62}.boot-spinner{width:34px;height:34px;margin:18px auto;border:3px solid rgba(72,104,78,.18);border-top-color:#48684e;border-radius:50%;animation:boot-spin .9s linear infinite}.boot-actions{display:none;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:18px}.boot-actions button{min-height:44px;padding:0 18px;border-radius:999px;border:1px solid rgba(62,70,55,.18);background:#2f4d37;color:#f7f1e5;font:inherit;font-weight:700}.boot-actions button.secondary{background:transparent;color:#2f4d37}.boot-meta{font-size:.76rem;margin-top:16px;color:#8a8376}.boot-shell[data-state="recovery"] .boot-spinner{display:none}.boot-shell[data-state="recovery"] .boot-actions{display:flex}.boot-shell[data-state="recovery"] .boot-status{font-weight:700;color:#6f4e37}@keyframes boot-spin{to{transform:rotate(360deg)}}@media(prefers-reduced-motion:reduce){.boot-spinner{animation:none;border-top-color:rgba(72,104,78,.18)}}
+    </style>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <main class="boot-shell" id="reader-boot-shell" data-state="loading" role="status" aria-live="polite">
+        <section class="boot-card">
+          <small>ตำรา นิพนธ์ฟาร์ม</small>
+          <h1>กำลังเปิดตำรา</h1>
+          <div class="boot-spinner" aria-hidden="true"></div>
+          <p class="boot-status" id="reader-boot-status">กำลังเตรียมเนื้อหาและระบบการอ่าน…</p>
+          <div class="boot-actions">
+            <button type="button" onclick="location.reload()">ลองเปิดอีกครั้ง</button>
+            <button type="button" class="secondary" onclick="location.href=location.pathname">เปิดหน้าเริ่มต้น</button>
+          </div>
+          <p class="boot-meta">Reader shell: boot-recovery-v1</p>
+        </section>
+      </main>
+    </div>
+    <script>
+      window.__READER_BOOT_TIMER__ = window.setTimeout(function () {
+        var shell = document.getElementById('reader-boot-shell')
+        var status = document.getElementById('reader-boot-status')
+        if (!shell || !status) return
+        shell.setAttribute('data-state', 'recovery')
+        status.textContent = 'เปิดตำราไม่สำเร็จในเวลาที่คาดไว้ คุณสามารถลองใหม่ได้โดยข้อมูลบุ๊กมาร์กและตำแหน่งอ่านเดิมจะไม่ถูกลบ'
+      }, 9000)
+    </script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
